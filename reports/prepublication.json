@@ -1,0 +1,502 @@
+{
+  "recorded_at": "2026-11-03T14:31:06.305054+00:00",
+  "scope": "Prepublication: local build with real YouTube streaming; not evidence of Pages deployment.",
+  "video_url": "https://youtu.be/s9l7TZSY0-k",
+  "python": "3.12.13",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_hashes": {
+    "course/physics.py": "75d23e9e65d0c8f93ff479106c282cba060b74ce78ac120d4768b4ff7a508b71",
+    "course/publication_events.json": "7096248cfd9b96b08139b38f5ee78db6bdd8567f1d19f7ce423c2538110b4dea",
+    "lab/Quantum_Formalism_Lab.ipynb": "4276b79f4bc6318e216c4c6bd97709f369d9503834e8922fdeb8bf75623e8d12",
+    "website/dist/h5p/formalism.html": "bb277efcc8d8f9dd03ad6f87039190e42b802b5480345ba03a49d74ab5a44266",
+    "h5p/Quantum_Formalism_Interactive.h5p": "0d981f19bdaab3778c68b1a96900292a3663e63f284b7bc73717b01986c6ce25"
+  },
+  "website": {
+    "base": "LOCAL_TEST_BUILD",
+    "layouts": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "noOverflow": true,
+        "stateMeasurementControls": true
+      },
+      {
+        "name": "tablet",
+        "width": 820,
+        "noOverflow": true,
+        "stateMeasurementControls": true
+      },
+      {
+        "name": "phone",
+        "width": 390,
+        "noOverflow": true,
+        "stateMeasurementControls": true
+      }
+    ],
+    "h5pPractice": [
+      {
+        "id": "Q1",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      },
+      {
+        "id": "Q2",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      },
+      {
+        "id": "Q3",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      },
+      {
+        "id": "Q4",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      },
+      {
+        "id": "Q5",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      },
+      {
+        "id": "Q6",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      },
+      {
+        "id": "Q7",
+        "wrongFeedback": true,
+        "retry": true,
+        "score": 1
+      }
+    ],
+    "video": {
+      "mode": "startup-only",
+      "source": "https://youtu.be/s9l7TZSY0-k",
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 774,
+        "height": 435.375
+      },
+      "streaming": "Separate real streaming and all-learning-path tests are required."
+    },
+    "notebook": {
+      "errors": 0,
+      "plots": 4,
+      "kernelChoiceHandled": false,
+      "parameterChange": true,
+      "outputs": [
+        "Python ready: emscripten\n",
+        "State: [0.77459667+0.j         0.31622777+0.54772256j]\nNorm: 1.0\nPauli outcome probabilities: [(-1.0, 0.39999999999999997), (1.0, 0.6000000000000001)]\nPhysical spin expectation / hbar: 0.10000000000000006\n",
+        "Eigenvalues: [-1.  1.]\nIndependent spectral and matrix means: 0.20000000000000012 0.20000000000000012\n",
+        "",
+        "",
+        "Global-phase invariance checked. Change relative phase and compare x/y.\n",
+        "P(first x+): 0.744948974278318\nP(z+ | recorded x+): 0.5000000000000001\nRepeat x+ probability: 1.0000000000000002\nDiscarded x outcome; density/branch routes: 0.4999999999999998 0.4999999999999999\nCommutator norm: 2.8284271247461903 expectation in z+: 0j\n",
+        "",
+        "rtol: 0.0001 state error: 6.711353161722169e-08\nrtol: 1e-07 state error: 4.751613797964586e-09\nrtol: 1e-10 state error: 6.0091227194256635e-12\nEvolution cross-check complete\n",
+        "",
+        "Expected count / SD: 600.0000000000001 15.491933384829668\nSynthetic count mean: 599.555 standard error of mean: 1.0954451150103321\nLAB_COMPLETE; all worked examples executed\n",
+        "Three-level observable eigenvalues: [-1.  1.  1.]\n",
+        "PARAMETER_CHECK 0.010102051 0.6\n"
+      ]
+    },
+    "pageErrors": [],
+    "status": "PASS"
+  },
+  "learning": [
+    {
+      "artifact": "learning-local-mp4-desktop.json",
+      "status": "PASS",
+      "url": "LOCAL_TEST_BUILD",
+      "source": "LOCAL_TEST_BUILD",
+      "embedded": false,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "parentChapterSeek": null,
+      "paths": [
+        {
+          "id": "Q1",
+          "pausedAt": 73.063373,
+          "wrongFeedback": true,
+          "reviewTime": 0,
+          "targetReview": 0,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q2",
+          "pausedAt": 173.066506,
+          "wrongFeedback": true,
+          "reviewTime": 103.366666,
+          "targetReview": 103.36666666666666,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q3",
+          "pausedAt": 270.05366,
+          "wrongFeedback": true,
+          "reviewTime": 204.5,
+          "targetReview": 204.5,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q4",
+          "pausedAt": 372.069458,
+          "wrongFeedback": true,
+          "reviewTime": 301.533333,
+          "targetReview": 301.53333333333336,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q5",
+          "pausedAt": 474.055381,
+          "wrongFeedback": true,
+          "reviewTime": 402.766666,
+          "targetReview": 402.76666666666665,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q6",
+          "pausedAt": 579.052396,
+          "wrongFeedback": true,
+          "reviewTime": 505.633333,
+          "targetReview": 505.6333333333333,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q7",
+          "pausedAt": 687.051672,
+          "wrongFeedback": true,
+          "reviewTime": 609.9,
+          "targetReview": 609.9,
+          "retry": true,
+          "correctScore": 1
+        }
+      ],
+      "summary": {
+        "score": 5,
+        "maxScore": 5
+      },
+      "errors": [],
+      "mediaInterruptions": [
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q1"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q2"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q3"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q4"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q5"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q6"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q7"
+        }
+      ]
+    },
+    {
+      "artifact": "learning-local-mp4-phone.json",
+      "status": "PASS",
+      "url": "LOCAL_TEST_BUILD",
+      "source": "LOCAL_TEST_BUILD",
+      "embedded": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "parentChapterSeek": null,
+      "paths": [
+        {
+          "id": "Q1",
+          "pausedAt": 73.095974,
+          "wrongFeedback": true,
+          "reviewTime": 0,
+          "targetReview": 0,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q2",
+          "pausedAt": 173.109827,
+          "wrongFeedback": true,
+          "reviewTime": 103.366666,
+          "targetReview": 103.36666666666666,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q3",
+          "pausedAt": 270.142344,
+          "wrongFeedback": true,
+          "reviewTime": 204.512974,
+          "targetReview": 204.5,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q4",
+          "pausedAt": 372.125146,
+          "wrongFeedback": true,
+          "reviewTime": 301.548575,
+          "targetReview": 301.53333333333336,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q5",
+          "pausedAt": 474.150081,
+          "wrongFeedback": true,
+          "reviewTime": 402.766666,
+          "targetReview": 402.76666666666665,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q6",
+          "pausedAt": 579.106226,
+          "wrongFeedback": true,
+          "reviewTime": 505.633333,
+          "targetReview": 505.6333333333333,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q7",
+          "pausedAt": 687.069039,
+          "wrongFeedback": true,
+          "reviewTime": 609.902416,
+          "targetReview": 609.9,
+          "retry": true,
+          "correctScore": 1
+        }
+      ],
+      "summary": {
+        "score": 5,
+        "maxScore": 5
+      },
+      "errors": [],
+      "mediaInterruptions": [
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q1"
+        },
+        {
+          "name": "AbortError",
+          "message": "The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22",
+          "phase": "Q2"
+        }
+      ]
+    },
+    {
+      "artifact": "learning-youtube-desktop-embedded.json",
+      "status": "PASS",
+      "verifiedAt": "2026-11-03T14:29:00.869Z",
+      "url": "LOCAL_TEST_BUILD",
+      "source": "https://youtu.be/s9l7TZSY0-k",
+      "embedded": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "fullscreenReturn": true,
+      "summaryContinuation": true,
+      "parentChapterSeek": 103.36666666666666,
+      "paths": [
+        {
+          "id": "Q1",
+          "pausedAt": 73.06319905340577,
+          "wrongFeedback": true,
+          "reviewTime": 0.24845200953674315,
+          "targetReview": 0,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q2",
+          "pausedAt": 173.0569439923706,
+          "wrongFeedback": true,
+          "reviewTime": 103.36666666666666,
+          "targetReview": 103.36666666666666,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q3",
+          "pausedAt": 270.0650718779297,
+          "wrongFeedback": true,
+          "reviewTime": 204.5,
+          "targetReview": 204.5,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q4",
+          "pausedAt": 372.0590778550415,
+          "wrongFeedback": true,
+          "reviewTime": 301.53333333333336,
+          "targetReview": 301.53333333333336,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q5",
+          "pausedAt": 474.07424797138975,
+          "wrongFeedback": true,
+          "reviewTime": 402.76666666666665,
+          "targetReview": 402.76666666666665,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q6",
+          "pausedAt": 579.0502671678466,
+          "wrongFeedback": true,
+          "reviewTime": 505.6333333333333,
+          "targetReview": 505.6333333333333,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q7",
+          "pausedAt": 687.0568580534058,
+          "wrongFeedback": true,
+          "reviewTime": 609.9,
+          "targetReview": 609.9,
+          "retry": true,
+          "correctScore": 1
+        }
+      ],
+      "summary": {
+        "score": 5,
+        "maxScore": 5
+      },
+      "errors": [],
+      "mediaInterruptions": []
+    },
+    {
+      "artifact": "learning-youtube-phone.json",
+      "status": "PASS",
+      "verifiedAt": "2026-11-03T14:30:06.965Z",
+      "url": "LOCAL_TEST_BUILD",
+      "source": "https://youtu.be/s9l7TZSY0-k",
+      "embedded": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullscreenReturn": true,
+      "summaryContinuation": true,
+      "parentChapterSeek": null,
+      "paths": [
+        {
+          "id": "Q1",
+          "pausedAt": 73.10744501525879,
+          "wrongFeedback": true,
+          "reviewTime": 0,
+          "targetReview": 0,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q2",
+          "pausedAt": 173.08491793133544,
+          "wrongFeedback": true,
+          "reviewTime": 103.36666666666666,
+          "targetReview": 103.36666666666666,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q3",
+          "pausedAt": 270.0998330476837,
+          "wrongFeedback": true,
+          "reviewTime": 204.5,
+          "targetReview": 204.5,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q4",
+          "pausedAt": 372.1180609446869,
+          "wrongFeedback": true,
+          "reviewTime": 301.53333333333336,
+          "targetReview": 301.53333333333336,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q5",
+          "pausedAt": 474.1078461087189,
+          "wrongFeedback": true,
+          "reviewTime": 402.76666666666665,
+          "targetReview": 402.76666666666665,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q6",
+          "pausedAt": 579.0859840152588,
+          "wrongFeedback": true,
+          "reviewTime": 505.6333333333333,
+          "targetReview": 505.6333333333333,
+          "retry": true,
+          "correctScore": 1
+        },
+        {
+          "id": "Q7",
+          "pausedAt": 687.1035059217987,
+          "wrongFeedback": true,
+          "reviewTime": 609.9,
+          "targetReview": 609.9,
+          "retry": true,
+          "correctScore": 1
+        }
+      ],
+      "summary": {
+        "score": 5,
+        "maxScore": 5
+      },
+      "errors": [],
+      "mediaInterruptions": []
+    }
+  ]
+}

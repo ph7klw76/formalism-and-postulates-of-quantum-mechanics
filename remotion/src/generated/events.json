@@ -1,0 +1,2758 @@
+{
+  "schema_version": 1,
+  "status": "MEASURED",
+  "title": "Formalism and Postulates of Quantum Mechanics",
+  "slug": "formalism-and-postulates-of-quantum-mechanics",
+  "website_url": "https://ph7klw76.github.io/formalism-and-postulates-of-quantum-mechanics/",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_frames": 21600,
+  "duration_seconds": 720.0,
+  "scenes": [
+    {
+      "index": 0,
+      "chapter": 0,
+      "title": "A state is a prediction engine",
+      "focus": "What can a spin experiment tell us?",
+      "text": "Imagine preparing many identical spin one-half systems. Measuring along the vertical axis gives sixty percent plus outcomes. Have you completely identified the quantum state? Surprisingly, no. To understand why, we need the formalism: states, operators, probabilities, measurement updates, and time evolution. Our small two-level laboratory will turn those postulates into predictions you can test.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 0,
+      "end_frame": 754,
+      "duration_frames": 754,
+      "speech_end_frame": 737,
+      "formulas": [
+        "|\\psi\\rangle\\ \\longrightarrow\\ \\text{testable probabilities}",
+        "\\text{Same }P(z+)\\ \\not\\Rightarrow\\ \\text{same state}"
+      ],
+      "note": "A 12-minute foundation, followed by an independent computational investigation.",
+      "highlight_term": "state",
+      "highlight_frame": 266,
+      "phase": "EXPLAIN"
+    },
+    {
+      "index": 1,
+      "chapter": 0,
+      "title": "One state, many representations",
+      "focus": "A complex vector is not a physical arrow",
+      "text": "A pure state is represented by a normalized ket in a complex Hilbert space. A bra is its conjugate transpose, so the inner product includes complex conjugation. In an orthonormal two-state basis, the coefficients are probability amplitudes. Their squared magnitudes sum to one. Changing basis changes the coordinates, not the preparation. A common overall phase also leaves every measurement probability unchanged.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 754,
+      "end_frame": 1564,
+      "duration_frames": 810,
+      "speech_end_frame": 1546,
+      "formulas": [
+        "|\\psi\\rangle=\\alpha|z+\\rangle+\\beta|z-\\rangle",
+        "\\langle\\psi|\\psi\\rangle=|\\alpha|^2+|\\beta|^2=1",
+        "e^{i\\chi}|\\psi\\rangle\\sim|\\psi\\rangle"
+      ],
+      "note": "A ket is a representation of a preparation. A bra includes complex conjugation.",
+      "highlight_term": "state",
+      "highlight_frame": 773,
+      "phase": "EXPLAIN"
+    },
+    {
+      "index": 2,
+      "chapter": 0,
+      "title": "Predict: how many dimensions?",
+      "focus": "Three measurement axes; how many independent basis states?",
+      "text": "Pause and predict. Spin can be measured along three spatial axes. Does that make its spin Hilbert space three-dimensional? Choose between two dimensions, three dimensions, and infinitely many dimensions. Distinguish the number of possible apparatus orientations from the number of independent states needed to describe this degree of freedom.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 1564,
+      "end_frame": 2365,
+      "duration_frames": 801,
+      "speech_end_frame": 2170,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "state",
+      "highlight_frame": null,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 3,
+      "chapter": 0,
+      "title": "Dimension counts independent states",
+      "focus": "Spin-only Hilbert space: complex dimension two",
+      "text": "For spin one-half alone, the answer is two. The plus and minus vertical-spin states form a complete basis. Measurements along other directions use different bases in that same space. Position and other degrees of freedom require additional structure; we have deliberately excluded them. The Bloch arrow summarizes a two-level state. It is not a tiny spinning ball or a particle trajectory.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 2365,
+      "end_frame": 3101,
+      "duration_frames": 736,
+      "speech_end_frame": 3084,
+      "formulas": [
+        "\\dim_{\\mathbb C}\\mathcal H_{\\rm spin}=2",
+        "|x+\\rangle=\\frac{|z+\\rangle+|z-\\rangle}{\\sqrt2}"
+      ],
+      "note": "Different apparatus directions do not add spin basis dimensions.",
+      "highlight_term": "state",
+      "highlight_frame": 2945,
+      "phase": "EXPLAIN"
+    },
+    {
+      "index": 4,
+      "chapter": 1,
+      "title": "An observable is an operator",
+      "focus": "Physical outcomes come from the spectrum",
+      "text": "An observable is represented here by a Hermitian operator. Its eigenvalues are possible results of an ideal projective measurement. Its eigenvectors, or more generally its eigenspaces, describe states with definite values. Hermiticity gives real eigenvalues. Completeness of the orthogonal spectral projectors guarantees that the probabilities for all mutually exclusive outcomes add to one.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 3101,
+      "end_frame": 3909,
+      "duration_frames": 808,
+      "speech_end_frame": 3891,
+      "formulas": [
+        "A=A^\\dagger",
+        "A=\\sum_a aP_a,\\quad \\sum_a P_a=I"
+      ],
+      "note": "Possible results are spectral values. Projectors describe the outcome subspaces.",
+      "highlight_term": "eigenvalues",
+      "highlight_frame": 3248,
+      "phase": "COMPUTE"
+    },
+    {
+      "index": 5,
+      "chapter": 1,
+      "title": "The spin scale matters",
+      "focus": "Pauli outcomes are dimensionless; spin has units",
+      "text": "The Pauli z matrix has eigenvalues plus one and minus one. Physical z spin is h-bar divided by two times that matrix, so the measured angular momenta are plus or minus h-bar over two. H-bar is Planck's constant divided by two pi. Never silently exchange a dimensionless Pauli expectation with a physical spin value.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 3909,
+      "end_frame": 4606,
+      "duration_frames": 697,
+      "speech_end_frame": 4589,
+      "formulas": [
+        "\\sigma_z=\\begin{pmatrix}1&0\\\\0&-1\\end{pmatrix}",
+        "S_z=\\frac{\\hbar}{2}\\sigma_z,\\quad s_z=\\pm\\frac{\\hbar}{2}"
+      ],
+      "note": "Keep dimensionless Pauli values separate from physical angular momentum.",
+      "highlight_term": "eigenvalues",
+      "highlight_frame": 3964,
+      "phase": "COMPUTE"
+    },
+    {
+      "index": 6,
+      "chapter": 1,
+      "title": "Predict: a single outcome",
+      "focus": "Prepare horizontal plus; measure vertical spin",
+      "text": "Prepare the horizontal plus state and measure vertical spin once. Can the detector report zero because the average vertical spin is zero? Predict: zero every time, either plus or minus h-bar over two, or any value between those extremes. Give a reason based on the observable, not on a classical picture of an arrow.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 4606,
+      "end_frame": 5368,
+      "duration_frames": 762,
+      "speech_end_frame": 5173,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "eigenvalues",
+      "highlight_frame": null,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 7,
+      "chapter": 1,
+      "title": "An average is not an allowed click",
+      "focus": "Eigenvalues constrain single-shot outcomes",
+      "text": "The detector reports one of the two eigenvalues, each with probability one half in this preparation. Zero is the expectation value, not a possible single-shot result. Writing an operator in its spectral form, as eigenvalue times projector summed over outcomes, makes this distinction explicit. Degenerate eigenvalues correspond to whole eigenspaces rather than a uniquely selected eigenvector.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 5368,
+      "end_frame": 6135,
+      "duration_frames": 767,
+      "speech_end_frame": 6118,
+      "formulas": [
+        "P(z+|x+)=P(z-|x+)=\\frac12",
+        "\\langle S_z\\rangle=0\\quad\\text{but}\\quad 0\\notin\\operatorname{spec}(S_z)"
+      ],
+      "note": "A zero mean does not imply a zero detector click.",
+      "highlight_term": "eigenvalues",
+      "highlight_frame": 5429,
+      "phase": "COMPUTE"
+    },
+    {
+      "index": 8,
+      "chapter": 2,
+      "title": "The Born rule turns amplitudes into chances",
+      "focus": "Project onto an eigenspace; take the squared norm",
+      "text": "For an ideal measurement, the probability of an outcome is the squared length of the state projected into its eigenspace. For a nondegenerate outcome, this is the squared magnitude of the inner product with its eigenket. Amplitudes can be complex or negative. Probabilities cannot. Taking a coefficient directly as a probability can give an impossible answer.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 6135,
+      "end_frame": 6802,
+      "duration_frames": 667,
+      "speech_end_frame": 6784,
+      "formulas": [
+        "p(a)=\\langle\\psi|P_a|\\psi\\rangle",
+        "p(a)=|\\langle a|\\psi\\rangle|^2\\ \\text{(nondegenerate)}"
+      ],
+      "note": "Complex amplitudes combine before taking a squared magnitude.",
+      "highlight_term": "probability",
+      "highlight_frame": 6190,
+      "phase": "EXPLAIN"
+    },
+    {
+      "index": 9,
+      "chapter": 2,
+      "title": "Condition on the recorded outcome",
+      "focus": "Projection, followed by normalization",
+      "text": "Our example has vertical plus probability zero point six and vertical minus probability zero point four. Its relative phase does not appear in those two numbers, but it matters in other bases. If an outcome is recorded, the conditional post-measurement state is the projected ket divided by its norm. An impossible outcome has no conditional state; division by zero is not physics.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 6802,
+      "end_frame": 7480,
+      "duration_frames": 678,
+      "speech_end_frame": 7463,
+      "formulas": [
+        "\\begin{aligned}|\\psi\\rangle={}&\\sqrt{0.6}|z+\\rangle\\\\&+e^{i\\pi/3}\\sqrt{0.4}|z-\\rangle\\end{aligned}",
+        "|\\psi_a\\rangle=\\frac{P_a|\\psi\\rangle}{\\sqrt{p(a)}}\\quad[p(a)>0]"
+      ],
+      "note": "Condition on the recorded outcome. Impossible outcomes have no conditional ket.",
+      "highlight_term": "probability",
+      "highlight_frame": 6857,
+      "phase": "EXPLAIN"
+    },
+    {
+      "index": 10,
+      "chapter": 2,
+      "title": "Predict: after horizontal plus",
+      "focus": "What will a second, vertical measurement do?",
+      "text": "Suppose the first measurement records horizontal plus. Immediately measure vertical spin, with no intervening evolution. Is the probability of vertical plus still zero point six, now one half, or now one? Predict using the state after the first recorded result. Reusing the original preparation is a common but consequential mistake.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 7480,
+      "end_frame": 8268,
+      "duration_frames": 788,
+      "speech_end_frame": 8073,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "probability",
+      "highlight_frame": 7712,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 11,
+      "chapter": 2,
+      "title": "The preparation has changed",
+      "focus": "Use the conditional state for the next prediction",
+      "text": "The probability is one half. Conditional on horizontal plus, the state is the horizontal plus eigenstate, regardless of the original amplitudes. If we repeat the same horizontal measurement immediately, its recorded value repeats with certainty in this ideal model. If we discard an intermediate outcome instead, we must average over its possible post-measurement states, rather than pretending nothing happened.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 8268,
+      "end_frame": 9046,
+      "duration_frames": 778,
+      "speech_end_frame": 9028,
+      "formulas": [
+        "|\\psi_{x+}\\rangle=|x+\\rangle",
+        "P(z+|\\text{recorded }x+)=\\frac12"
+      ],
+      "note": "Repeat the same ideal observable: certainty. Change the basis: recompute.",
+      "highlight_term": "probability",
+      "highlight_frame": 8280,
+      "phase": "EXPLAIN"
+    },
+    {
+      "index": 12,
+      "chapter": 3,
+      "title": "Expectation means a weighted ensemble",
+      "focus": "The average can lie between allowed outcomes",
+      "text": "An expectation value combines the possible outcomes with their Born probabilities. For our vertical measurement, sixty percent plus h-bar over two and forty percent minus h-bar over two give an average of zero point one h-bar. That average describes many identically prepared systems. It does not mean that each system contains a little fraction of each detector result.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 9046,
+      "end_frame": 9751,
+      "duration_frames": 705,
+      "speech_end_frame": 9734,
+      "formulas": [
+        "\\langle A\\rangle=\\langle\\psi|A|\\psi\\rangle=\\sum_a ap(a)",
+        "\\langle S_z\\rangle=\\frac{\\hbar}{2}(0.6-0.4)=0.1\\hbar"
+      ],
+      "note": "An expectation is a statistical prediction across repeated preparations.",
+      "highlight_term": "expectation",
+      "highlight_frame": 9059,
+      "phase": "APPLY"
+    },
+    {
+      "index": 13,
+      "chapter": 3,
+      "title": "Compute the prediction two ways",
+      "focus": "Matrix product agrees with the spectral sum",
+      "text": "Compute the expectation as bra, operator, ket. Then independently compute the probability-weighted eigenvalue sum. They must agree. For one thousand independent preparations, the expected number of vertical plus outcomes is six hundred, with a binomial standard deviation of about fifteen point five. A simulated histogram illustrates sampling fluctuations; it is not a claim of measured laboratory data.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 9751,
+      "end_frame": 10541,
+      "duration_frames": 790,
+      "speech_end_frame": 10524,
+      "formulas": [
+        "\\mathbb E[N_+]=Np,\\quad \\sigma_{N_+}=\\sqrt{Np(1-p)}",
+        "N=1000,\\ p=0.6:\\quad 600\\ \\pm\\ 15.49\\ \\text{(one SD)}"
+      ],
+      "note": "Synthetic trials illustrate fluctuations; they are not measured device data.",
+      "highlight_term": "expectation",
+      "highlight_frame": 9777,
+      "phase": "APPLY"
+    },
+    {
+      "index": 14,
+      "chapter": 3,
+      "title": "Predict: what does the mean guarantee?",
+      "focus": "Separate expectation from an individual outcome",
+      "text": "The predicted mean vertical spin is zero point one h-bar. Which statement follows? Every individual detector result equals that mean, the mean is approached statistically across many preparations, or exactly six hundred of every thousand results must be plus? Choose the statement that respects both the operator spectrum and random sampling.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 10541,
+      "end_frame": 11341,
+      "duration_frames": 800,
+      "speech_end_frame": 11146,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "expectation",
+      "highlight_frame": null,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 15,
+      "chapter": 3,
+      "title": "Uncertainty is part of the prediction",
+      "focus": "Finite samples fluctuate around the theoretical mean",
+      "text": "The second statement is correct. The expectation is a probability-weighted theoretical mean; a finite sample fluctuates. Increasing the number of independent trials narrows the uncertainty of the estimated mean, but does not create new single-shot eigenvalues. In your notebook, change the sample size and seed, report uncertainty, and compare the observed deviation with the binomial prediction.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 11341,
+      "end_frame": 12083,
+      "duration_frames": 742,
+      "speech_end_frame": 12065,
+      "formulas": [
+        "\\text{single result: }\\pm\\hbar/2",
+        "\\text{ensemble mean: }0.1\\hbar\\quad\\text{(theory)}"
+      ],
+      "note": "Report the trial count, uncertainty and assumptions behind an estimated mean.",
+      "highlight_term": "expectation",
+      "highlight_frame": 11414,
+      "phase": "APPLY"
+    },
+    {
+      "index": 16,
+      "chapter": 4,
+      "title": "Order can change the experiment",
+      "focus": "An ignored measurement can still change later statistics",
+      "text": "Prepare vertical plus. An immediate vertical measurement gives plus with certainty. Now insert a horizontal measurement and ignore its result. The resulting ensemble is an equal mixture of horizontal plus and horizontal minus. A later vertical measurement gives plus only half the time. Ignoring the record is not the same operation as omitting the apparatus.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 12083,
+      "end_frame": 12736,
+      "duration_frames": 653,
+      "speech_end_frame": 12719,
+      "formulas": [
+        "|z+\\rangle\\ \\xrightarrow{\\text{measure }x;\\ \\text{discard}}\\ \\rho=\\frac I2",
+        "P(z+\\text{ afterward})=\\frac12"
+      ],
+      "note": "Not recording a result is different from not performing a measurement.",
+      "highlight_term": "measurement",
+      "highlight_frame": 12171,
+      "phase": "CRITIQUE"
+    },
+    {
+      "index": 17,
+      "chapter": 4,
+      "title": "Compatibility is an operator statement",
+      "focus": "Commuting observables admit a common eigenbasis",
+      "text": "For finite-dimensional Hermitian observables, commuting operators can be simultaneously diagonalized. Horizontal and vertical spin do not commute. Their ideal measurement order can therefore matter. But a zero expectation of their commutator in one specially chosen state does not make the commutator operator zero. Compatibility concerns the operators, not just one number calculated in one preparation.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 12736,
+      "end_frame": 13545,
+      "duration_frames": 809,
+      "speech_end_frame": 13528,
+      "formulas": [
+        "[A,B]=0\\quad\\Longleftrightarrow\\quad\\text{common eigenbasis}",
+        "[\\sigma_x,\\sigma_z]=-2i\\sigma_y\\ne0"
+      ],
+      "note": "A vanishing commutator expectation in one state does not prove compatibility.",
+      "highlight_term": "measurement",
+      "highlight_frame": 13065,
+      "phase": "CRITIQUE"
+    },
+    {
+      "index": 18,
+      "chapter": 4,
+      "title": "Predict: insert the horizontal measurement",
+      "focus": "Prepare vertical plus, measure horizontal, then vertical",
+      "text": "Return to vertical plus preparation. Insert the horizontal measurement, discard its result, and then measure vertical spin. Is vertical plus certain, impossible, or obtained with probability one half? Use the complete experimental sequence, including the disturbance associated with the intermediate measurement. State which idealizations your prediction assumes.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 13545,
+      "end_frame": 14396,
+      "duration_frames": 851,
+      "speech_end_frame": 14201,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "measurement",
+      "highlight_frame": 13656,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 19,
+      "chapter": 4,
+      "title": "Track the full sequence",
+      "focus": "Conditioned branches and discarded outcomes differ",
+      "text": "The answer is one half. You can calculate each conditioned branch and then average, or use the density matrix after the unrecorded measurement. Those independent routes agree. Our assumptions are ideal projective measurements and no evolution between them. A real apparatus may have additional errors or dynamics. Testing this model requires checking those conditions rather than treating every discrepancy as a new postulate.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 14396,
+      "end_frame": 15169,
+      "duration_frames": 773,
+      "speech_end_frame": 15152,
+      "formulas": [
+        "\\rho\\longrightarrow\\sum_a P_a\\rho P_a",
+        "P(z+)=\\frac12\\cdot\\frac12+\\frac12\\cdot\\frac12=\\frac12"
+      ],
+      "note": "Independent branch averaging agrees with the density-matrix calculation.",
+      "highlight_term": "measurement",
+      "highlight_frame": 14633,
+      "phase": "CRITIQUE"
+    },
+    {
+      "index": 20,
+      "chapter": 5,
+      "title": "Time evolution is unitary between measurements",
+      "focus": "The Hamiltonian generates the change",
+      "text": "For an isolated system, the Schrödinger equation generates unitary time evolution. A time-independent Hamiltonian gives an exponential operator. An energy eigenstate acquires only an overall phase, leaving time-independent-observable probabilities unchanged. A superposition of different energies accumulates relative phase, which can change interference and expectation values. Stationary does not mean that the ket has literally stopped acquiring phase.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 15169,
+      "end_frame": 16038,
+      "duration_frames": 869,
+      "speech_end_frame": 16021,
+      "formulas": [
+        "i\\hbar\\frac{d|\\psi\\rangle}{dt}=H|\\psi\\rangle",
+        "U(t)=e^{-iHt/\\hbar},\\quad U^\\dagger U=I"
+      ],
+      "note": "An energy eigenstate acquires overall phase; superpositions can acquire relative phase.",
+      "highlight_term": "phase",
+      "highlight_frame": 15545,
+      "phase": "COMPUTE"
+    },
+    {
+      "index": 21,
+      "chapter": 5,
+      "title": "Watch relative phase become measurable",
+      "focus": "A z Hamiltonian rotates horizontal-spin statistics",
+      "text": "Start in horizontal plus and choose the Hamiltonian proportional to the Pauli z matrix. Write the dimensionless rotation angle as omega times time. Vertical probabilities stay one half, but horizontal plus probability oscillates as cosine squared of half that angle. At a pi rotation the state is horizontal minus. Unchanged vertical statistics alone would miss this entire change.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 16038,
+      "end_frame": 16823,
+      "duration_frames": 785,
+      "speech_end_frame": 16806,
+      "formulas": [
+        "H=\\frac{\\hbar\\omega}{2}\\sigma_z,\\quad\\theta=\\omega t",
+        "P(x+;t)=\\cos^2(\\theta/2),\\quad P(z+;t)=\\frac12"
+      ],
+      "note": "The state evolves even when one chosen measurement distribution stays fixed.",
+      "highlight_term": "phase",
+      "highlight_frame": null,
+      "phase": "COMPUTE"
+    },
+    {
+      "index": 22,
+      "chapter": 5,
+      "title": "Predict: a pi rotation",
+      "focus": "An unchanged z distribution does not freeze the state",
+      "text": "After that pi rotation, what is the probability of horizontal plus? Predict zero, one half, or one. Then ask why the vertical measurement still gives equal probabilities. Keep track of relative phase. A conclusion about every observable cannot be inferred from measurements in a single basis.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 16823,
+      "end_frame": 17538,
+      "duration_frames": 715,
+      "speech_end_frame": 17343,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "phase",
+      "highlight_frame": 17160,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 23,
+      "chapter": 5,
+      "title": "Compare two independent evolution methods",
+      "focus": "Diagonalization, closed form and a differential solver",
+      "text": "Horizontal plus probability is zero. In the laboratory, compare the analytic rotation with eigenvalue exponentiation and direct integration of the Schrödinger equation. Check norm conservation and solver convergence. Changing omega changes the time scale; confusing radians, cycles and seconds changes the prediction. Use the stated units and verify the limiting case at time zero.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 17538,
+      "end_frame": 18297,
+      "duration_frames": 759,
+      "speech_end_frame": 18280,
+      "formulas": [
+        "\\theta=\\pi:\\quad |x+\\rangle\\longrightarrow e^{i\\chi}|x-\\rangle",
+        "P(x+)=0,\\quad P(z+)=\\frac12"
+      ],
+      "note": "Compare closed form, matrix exponentiation and ODE convergence in the laboratory.",
+      "highlight_term": "phase",
+      "highlight_frame": null,
+      "phase": "COMPUTE"
+    },
+    {
+      "index": 24,
+      "chapter": 6,
+      "title": "A single basis leaves questions unanswered",
+      "focus": "Distinct states can share identical measurement statistics",
+      "text": "We can now revisit the opening puzzle. Vertical probabilities determine populations, but not the relative phase. Two different pure states can agree on those data and disagree in another basis. Measuring horizontal and transverse spin provides additional information. Inferring a state requires a model of preparation, a sufficient set of measurements, uncertainty estimates, and an honest statement of what remains undetermined.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 18297,
+      "end_frame": 19099,
+      "duration_frames": 802,
+      "speech_end_frame": 19081,
+      "formulas": [
+        "P(z+)=0.6\\quad\\text{does not determine }\\phi",
+        "P(x+)=\\frac12+\\sqrt{0.24}\\cos\\phi"
+      ],
+      "note": "An additional y measurement can resolve the sign ambiguity left by cosine.",
+      "highlight_term": "model",
+      "highlight_frame": 18844,
+      "phase": "CRITIQUE"
+    },
+    {
+      "index": 25,
+      "chapter": 6,
+      "title": "Turn the postulates into an algorithm",
+      "focus": "Prepare, choose, predict, update, evolve and test",
+      "text": "Our laboratory represents a pure two-level state, an ideal observable and a defined sequence of operations. Normalize the state, find spectral projectors, compute probabilities, condition on recorded outcomes, and evolve between measurements. Do not apply the pure-state picture blindly to an unrecorded ensemble or a system entangled with its environment. Those cases require a broader state description.",
+      "kind": "explain",
+      "duration": 1.0,
+      "start_frame": 19099,
+      "end_frame": 19927,
+      "duration_frames": 828,
+      "speech_end_frame": 19910,
+      "formulas": [
+        "|\\psi\\rangle\\to\\{P_a,p(a)\\}",
+        "\\text{condition}\\to\\text{evolve}\\to\\text{test}"
+      ],
+      "note": "Pure states, ideal projective measurements, isolated unitary evolution: stated scope.",
+      "highlight_term": "model",
+      "highlight_frame": null,
+      "phase": "CRITIQUE"
+    },
+    {
+      "index": 26,
+      "chapter": 6,
+      "title": "Predict: do vertical statistics identify the state?",
+      "focus": "Same populations, different relative phases",
+      "text": "Two preparations give identical vertical-spin probabilities. Must all their measurement predictions be identical? Choose yes, no because relative phase may differ, or yes because normalization fixes the phase. Propose an additional measurement that could distinguish the preparations. A good answer states what the available evidence does and does not determine.",
+      "kind": "predict",
+      "duration": 1.0,
+      "start_frame": 19927,
+      "end_frame": 20777,
+      "duration_frames": 850,
+      "speech_end_frame": 20582,
+      "formulas": [],
+      "note": "",
+      "highlight_term": "model",
+      "highlight_frame": null,
+      "phase": "PREDICT"
+    },
+    {
+      "index": 27,
+      "chapter": 6,
+      "title": "Your investigation starts here",
+      "focus": "Predict, compute, test and defend a model",
+      "text": "Relative phase can distinguish those preparations. Open the browser Python lab, vary the state and measurement axis, and test your predictions before running the code. Then tackle an unfamiliar three-level measurement with a degenerate outcome. Decide which coherence an ideal measurement preserves, compare independent calculations, and defend the assumptions. The postulates become useful when you can explain a new experiment, not merely repeat their names.",
+      "kind": "reveal",
+      "duration": 1.0,
+      "start_frame": 20777,
+      "end_frame": 21600,
+      "duration_frames": 823,
+      "speech_end_frame": 21582,
+      "formulas": [
+        "A=\\operatorname{diag}(1,1,-1)\\quad\\text{(new three-level task)}",
+        "P_+=\\operatorname{diag}(1,1,0)\\quad\\text{What coherence survives?}"
+      ],
+      "note": "Open the Python lab. Predict first; calculate; challenge the assumptions.",
+      "highlight_term": "model",
+      "highlight_frame": null,
+      "phase": "CRITIQUE"
+    }
+  ],
+  "narration": [
+    {
+      "scene": 0,
+      "start_seconds": 0.22,
+      "end_seconds": 11.22,
+      "start_frame": 7,
+      "end_frame": 337,
+      "text": "Imagine preparing many identical spin one-half systems. Measuring along the vertical axis gives sixty percent plus outcomes. Have you completely identified the quantum state? Surprisingly, no."
+    },
+    {
+      "scene": 0,
+      "start_seconds": 11.440000000000001,
+      "end_seconds": 24.55,
+      "start_frame": 343,
+      "end_frame": 736,
+      "text": "To understand why, we need the formalism: states, operators, probabilities, measurement updates, and time evolution. Our small two-level laboratory will turn those postulates into predictions you can test."
+    },
+    {
+      "scene": 1,
+      "start_seconds": 25.35333333333333,
+      "end_seconds": 42.873333333333335,
+      "start_frame": 761,
+      "end_frame": 1286,
+      "text": "A pure state is represented by a normalized ket in a complex Hilbert space. A bra is its conjugate transpose, so the inner product includes complex conjugation. In an orthonormal two-state basis, the coefficients are probability amplitudes. Their squared magnitudes sum to one."
+    },
+    {
+      "scene": 1,
+      "start_seconds": 43.093333333333334,
+      "end_seconds": 51.52333333333333,
+      "start_frame": 1293,
+      "end_frame": 1546,
+      "text": "Changing basis changes the coordinates, not the preparation. A common overall phase also leaves every measurement probability unchanged."
+    },
+    {
+      "scene": 2,
+      "start_seconds": 52.35333333333333,
+      "end_seconds": 64.76333333333334,
+      "start_frame": 1571,
+      "end_frame": 1943,
+      "text": "Pause and predict. Spin can be measured along three spatial axes. Does that make its spin Hilbert space three-dimensional? Choose between two dimensions, three dimensions, and infinitely many dimensions."
+    },
+    {
+      "scene": 2,
+      "start_seconds": 64.98333333333333,
+      "end_seconds": 72.32333333333334,
+      "start_frame": 1950,
+      "end_frame": 2170,
+      "text": "Distinguish the number of possible apparatus orientations from the number of independent states needed to describe this degree of freedom."
+    },
+    {
+      "scene": 3,
+      "start_seconds": 79.05333333333333,
+      "end_seconds": 95.67333333333333,
+      "start_frame": 2372,
+      "end_frame": 2870,
+      "text": "For spin one-half alone, the answer is two. The plus and minus vertical-spin states form a complete basis. Measurements along other directions use different bases in that same space. Position and other degrees of freedom require additional structure; we have deliberately excluded them."
+    },
+    {
+      "scene": 3,
+      "start_seconds": 95.89333333333333,
+      "end_seconds": 102.78333333333333,
+      "start_frame": 2877,
+      "end_frame": 3084,
+      "text": "The Bloch arrow summarizes a two-level state. It is not a tiny spinning ball or a particle trajectory."
+    },
+    {
+      "scene": 4,
+      "start_seconds": 103.58666666666666,
+      "end_seconds": 121.69666666666666,
+      "start_frame": 3108,
+      "end_frame": 3651,
+      "text": "An observable is represented here by a Hermitian operator. Its eigenvalues are possible results of an ideal projective measurement. Its eigenvectors, or more generally its eigenspaces, describe states with definite values. Hermiticity gives real eigenvalues."
+    },
+    {
+      "scene": 4,
+      "start_seconds": 121.91666666666666,
+      "end_seconds": 129.68666666666667,
+      "start_frame": 3657,
+      "end_frame": 3891,
+      "text": "Completeness of the orthogonal spectral projectors guarantees that the probabilities for all mutually exclusive outcomes add to one."
+    },
+    {
+      "scene": 5,
+      "start_seconds": 130.51999999999998,
+      "end_seconds": 146.64999999999998,
+      "start_frame": 3916,
+      "end_frame": 4399,
+      "text": "The Pauli z matrix has eigenvalues plus one and minus one. Physical z spin is h-bar divided by two times that matrix, so the measured angular momenta are plus or minus h-bar over two. H-bar is Planck's constant divided by two pi."
+    },
+    {
+      "scene": 5,
+      "start_seconds": 146.86999999999998,
+      "end_seconds": 152.93999999999997,
+      "start_frame": 4406,
+      "end_frame": 4588,
+      "text": "Never silently exchange a dimensionless Pauli expectation with a physical spin value."
+    },
+    {
+      "scene": 6,
+      "start_seconds": 153.7533333333333,
+      "end_seconds": 167.9433333333333,
+      "start_frame": 4613,
+      "end_frame": 5038,
+      "text": "Prepare the horizontal plus state and measure vertical spin once. Can the detector report zero because the average vertical spin is zero? Predict: zero every time, either plus or minus h-bar over two, or any value between those extremes."
+    },
+    {
+      "scene": 6,
+      "start_seconds": 168.1633333333333,
+      "end_seconds": 172.4133333333333,
+      "start_frame": 5045,
+      "end_frame": 5172,
+      "text": "Give a reason based on the observable, not on a classical picture of an arrow."
+    },
+    {
+      "scene": 7,
+      "start_seconds": 179.1533333333333,
+      "end_seconds": 189.5233333333333,
+      "start_frame": 5375,
+      "end_frame": 5686,
+      "text": "The detector reports one of the two eigenvalues, each with probability one half in this preparation. Zero is the expectation value, not a possible single-shot result."
+    },
+    {
+      "scene": 7,
+      "start_seconds": 189.7433333333333,
+      "end_seconds": 203.9133333333333,
+      "start_frame": 5692,
+      "end_frame": 6117,
+      "text": "Writing an operator in its spectral form, as eigenvalue times projector summed over outcomes, makes this distinction explicit. Degenerate eigenvalues correspond to whole eigenspaces rather than a uniquely selected eigenvector."
+    },
+    {
+      "scene": 8,
+      "start_seconds": 204.71999999999997,
+      "end_seconds": 221.06999999999996,
+      "start_frame": 6142,
+      "end_frame": 6632,
+      "text": "For an ideal measurement, the probability of an outcome is the squared length of the state projected into its eigenspace. For a nondegenerate outcome, this is the squared magnitude of the inner product with its eigenket. Amplitudes can be complex or negative. Probabilities cannot."
+    },
+    {
+      "scene": 8,
+      "start_seconds": 221.28999999999996,
+      "end_seconds": 226.12999999999997,
+      "start_frame": 6639,
+      "end_frame": 6784,
+      "text": "Taking a coefficient directly as a probability can give an impossible answer."
+    },
+    {
+      "scene": 9,
+      "start_seconds": 226.9533333333333,
+      "end_seconds": 237.65333333333328,
+      "start_frame": 6809,
+      "end_frame": 7130,
+      "text": "Our example has vertical plus probability zero point six and vertical minus probability zero point four. Its relative phase does not appear in those two numbers, but it matters in other bases."
+    },
+    {
+      "scene": 9,
+      "start_seconds": 237.87333333333328,
+      "end_seconds": 248.74333333333328,
+      "start_frame": 7136,
+      "end_frame": 7462,
+      "text": "If an outcome is recorded, the conditional post-measurement state is the projected ket divided by its norm. An impossible outcome has no conditional state; division by zero is not physics."
+    },
+    {
+      "scene": 10,
+      "start_seconds": 249.55333333333328,
+      "end_seconds": 264.64333333333326,
+      "start_frame": 7487,
+      "end_frame": 7939,
+      "text": "Suppose the first measurement records horizontal plus. Immediately measure vertical spin, with no intervening evolution. Is the probability of vertical plus still zero point six, now one half, or now one? Predict using the state after the first recorded result."
+    },
+    {
+      "scene": 10,
+      "start_seconds": 264.8633333333333,
+      "end_seconds": 269.0833333333333,
+      "start_frame": 7946,
+      "end_frame": 8072,
+      "text": "Reusing the original preparation is a common but consequential mistake."
+    },
+    {
+      "scene": 11,
+      "start_seconds": 275.82,
+      "end_seconds": 292.13,
+      "start_frame": 8275,
+      "end_frame": 8764,
+      "text": "The probability is one half. Conditional on horizontal plus, the state is the horizontal plus eigenstate, regardless of the original amplitudes. If we repeat the same horizontal measurement immediately, its recorded value repeats with certainty in this ideal model."
+    },
+    {
+      "scene": 11,
+      "start_seconds": 292.34999999999997,
+      "end_seconds": 300.92999999999995,
+      "start_frame": 8770,
+      "end_frame": 9028,
+      "text": "If we discard an intermediate outcome instead, we must average over its possible post-measurement states, rather than pretending nothing happened."
+    },
+    {
+      "scene": 12,
+      "start_seconds": 301.75333333333333,
+      "end_seconds": 319.61333333333334,
+      "start_frame": 9053,
+      "end_frame": 9588,
+      "text": "An expectation value combines the possible outcomes with their Born probabilities. For our vertical measurement, sixty percent plus h-bar over two and forty percent minus h-bar over two give an average of zero point one h-bar. That average describes many identically prepared systems."
+    },
+    {
+      "scene": 12,
+      "start_seconds": 319.8333333333333,
+      "end_seconds": 324.4433333333333,
+      "start_frame": 9595,
+      "end_frame": 9733,
+      "text": "It does not mean that each system contains a little fraction of each detector result."
+    },
+    {
+      "scene": 13,
+      "start_seconds": 325.25333333333333,
+      "end_seconds": 334.3233333333333,
+      "start_frame": 9758,
+      "end_frame": 10030,
+      "text": "Compute the expectation as bra, operator, ket. Then independently compute the probability-weighted eigenvalue sum. They must agree."
+    },
+    {
+      "scene": 13,
+      "start_seconds": 334.5433333333333,
+      "end_seconds": 350.7833333333333,
+      "start_frame": 10036,
+      "end_frame": 10524,
+      "text": "For one thousand independent preparations, the expected number of vertical plus outcomes is six hundred, with a binomial standard deviation of about fifteen point five. A simulated histogram illustrates sampling fluctuations; it is not a claim of measured laboratory data."
+    },
+    {
+      "scene": 14,
+      "start_seconds": 351.58666666666664,
+      "end_seconds": 366.75666666666666,
+      "start_frame": 10548,
+      "end_frame": 11003,
+      "text": "The predicted mean vertical spin is zero point one h-bar. Which statement follows? Every individual detector result equals that mean, the mean is approached statistically across many preparations, or exactly six hundred of every thousand results must be plus?"
+    },
+    {
+      "scene": 14,
+      "start_seconds": 366.97666666666663,
+      "end_seconds": 371.5066666666666,
+      "start_frame": 11009,
+      "end_frame": 11145,
+      "text": "Choose the statement that respects both the operator spectrum and random sampling."
+    },
+    {
+      "scene": 15,
+      "start_seconds": 378.25333333333333,
+      "end_seconds": 393.98333333333335,
+      "start_frame": 11348,
+      "end_frame": 11820,
+      "text": "The second statement is correct. The expectation is a probability-weighted theoretical mean; a finite sample fluctuates. Increasing the number of independent trials narrows the uncertainty of the estimated mean, but does not create new single-shot eigenvalues."
+    },
+    {
+      "scene": 15,
+      "start_seconds": 394.2033333333333,
+      "end_seconds": 402.1533333333333,
+      "start_frame": 11826,
+      "end_frame": 12065,
+      "text": "In your notebook, change the sample size and seed, report uncertainty, and compare the observed deviation with the binomial prediction."
+    },
+    {
+      "scene": 16,
+      "start_seconds": 402.9866666666667,
+      "end_seconds": 419.3966666666667,
+      "start_frame": 12090,
+      "end_frame": 12582,
+      "text": "Prepare vertical plus. An immediate vertical measurement gives plus with certainty. Now insert a horizontal measurement and ignore its result. The resulting ensemble is an equal mixture of horizontal plus and horizontal minus. A later vertical measurement gives plus only half the time."
+    },
+    {
+      "scene": 16,
+      "start_seconds": 419.6166666666667,
+      "end_seconds": 423.93666666666667,
+      "start_frame": 12588,
+      "end_frame": 12718,
+      "text": "Ignoring the record is not the same operation as omitting the apparatus."
+    },
+    {
+      "scene": 17,
+      "start_seconds": 424.75333333333333,
+      "end_seconds": 437.5133333333333,
+      "start_frame": 12743,
+      "end_frame": 13125,
+      "text": "For finite-dimensional Hermitian observables, commuting operators can be simultaneously diagonalized. Horizontal and vertical spin do not commute. Their ideal measurement order can therefore matter."
+    },
+    {
+      "scene": 17,
+      "start_seconds": 437.7333333333333,
+      "end_seconds": 450.9133333333333,
+      "start_frame": 13132,
+      "end_frame": 13527,
+      "text": "But a zero expectation of their commutator in one specially chosen state does not make the commutator operator zero. Compatibility concerns the operators, not just one number calculated in one preparation."
+    },
+    {
+      "scene": 18,
+      "start_seconds": 451.72,
+      "end_seconds": 464.0,
+      "start_frame": 13552,
+      "end_frame": 13920,
+      "text": "Return to vertical plus preparation. Insert the horizontal measurement, discard its result, and then measure vertical spin. Is vertical plus certain, impossible, or obtained with probability one half?"
+    },
+    {
+      "scene": 18,
+      "start_seconds": 464.22,
+      "end_seconds": 473.34000000000003,
+      "start_frame": 13927,
+      "end_frame": 14200,
+      "text": "Use the complete experimental sequence, including the disturbance associated with the intermediate measurement. State which idealizations your prediction assumes."
+    },
+    {
+      "scene": 19,
+      "start_seconds": 480.0866666666667,
+      "end_seconds": 495.1666666666667,
+      "start_frame": 14403,
+      "end_frame": 14855,
+      "text": "The answer is one half. You can calculate each conditioned branch and then average, or use the density matrix after the unrecorded measurement. Those independent routes agree. Our assumptions are ideal projective measurements and no evolution between them."
+    },
+    {
+      "scene": 19,
+      "start_seconds": 495.38666666666666,
+      "end_seconds": 505.0466666666667,
+      "start_frame": 14862,
+      "end_frame": 15151,
+      "text": "A real apparatus may have additional errors or dynamics. Testing this model requires checking those conditions rather than treating every discrepancy as a new postulate."
+    },
+    {
+      "scene": 20,
+      "start_seconds": 505.85333333333335,
+      "end_seconds": 522.7333333333333,
+      "start_frame": 15176,
+      "end_frame": 15682,
+      "text": "For an isolated system, the Schrödinger equation generates unitary time evolution. A time-independent Hamiltonian gives an exponential operator. An energy eigenstate acquires only an overall phase, leaving time-independent-observable probabilities unchanged."
+    },
+    {
+      "scene": 20,
+      "start_seconds": 522.9533333333334,
+      "end_seconds": 534.0033333333333,
+      "start_frame": 15689,
+      "end_frame": 16020,
+      "text": "A superposition of different energies accumulates relative phase, which can change interference and expectation values. Stationary does not mean that the ket has literally stopped acquiring phase."
+    },
+    {
+      "scene": 21,
+      "start_seconds": 534.82,
+      "end_seconds": 552.38,
+      "start_frame": 16045,
+      "end_frame": 16571,
+      "text": "Start in horizontal plus and choose the Hamiltonian proportional to the Pauli z matrix. Write the dimensionless rotation angle as omega times time. Vertical probabilities stay one half, but horizontal plus probability oscillates as cosine squared of half that angle."
+    },
+    {
+      "scene": 21,
+      "start_seconds": 552.6,
+      "end_seconds": 560.1700000000001,
+      "start_frame": 16578,
+      "end_frame": 16805,
+      "text": "At a pi rotation the state is horizontal minus. Unchanged vertical statistics alone would miss this entire change."
+    },
+    {
+      "scene": 22,
+      "start_seconds": 560.9866666666667,
+      "end_seconds": 572.7266666666667,
+      "start_frame": 16830,
+      "end_frame": 17182,
+      "text": "After that pi rotation, what is the probability of horizontal plus? Predict zero, one half, or one. Then ask why the vertical measurement still gives equal probabilities. Keep track of relative phase."
+    },
+    {
+      "scene": 22,
+      "start_seconds": 572.9466666666666,
+      "end_seconds": 578.0866666666666,
+      "start_frame": 17188,
+      "end_frame": 17343,
+      "text": "A conclusion about every observable cannot be inferred from measurements in a single basis."
+    },
+    {
+      "scene": 23,
+      "start_seconds": 584.82,
+      "end_seconds": 598.8100000000001,
+      "start_frame": 17545,
+      "end_frame": 17964,
+      "text": "Horizontal plus probability is zero. In the laboratory, compare the analytic rotation with eigenvalue exponentiation and direct integration of the Schrödinger equation. Check norm conservation and solver convergence."
+    },
+    {
+      "scene": 23,
+      "start_seconds": 599.03,
+      "end_seconds": 609.31,
+      "start_frame": 17971,
+      "end_frame": 18279,
+      "text": "Changing omega changes the time scale; confusing radians, cycles and seconds changes the prediction. Use the stated units and verify the limiting case at time zero."
+    },
+    {
+      "scene": 24,
+      "start_seconds": 610.12,
+      "end_seconds": 626.27,
+      "start_frame": 18304,
+      "end_frame": 18788,
+      "text": "We can now revisit the opening puzzle. Vertical probabilities determine populations, but not the relative phase. Two different pure states can agree on those data and disagree in another basis. Measuring horizontal and transverse spin provides additional information."
+    },
+    {
+      "scene": 24,
+      "start_seconds": 626.49,
+      "end_seconds": 636.03,
+      "start_frame": 18795,
+      "end_frame": 19081,
+      "text": "Inferring a state requires a model of preparation, a sufficient set of measurements, uncertainty estimates, and an honest statement of what remains undetermined."
+    },
+    {
+      "scene": 25,
+      "start_seconds": 636.8533333333334,
+      "end_seconds": 653.2533333333333,
+      "start_frame": 19106,
+      "end_frame": 19598,
+      "text": "Our laboratory represents a pure two-level state, an ideal observable and a defined sequence of operations. Normalize the state, find spectral projectors, compute probabilities, condition on recorded outcomes, and evolve between measurements."
+    },
+    {
+      "scene": 25,
+      "start_seconds": 653.4733333333334,
+      "end_seconds": 663.6433333333333,
+      "start_frame": 19604,
+      "end_frame": 19909,
+      "text": "Do not apply the pure-state picture blindly to an unrecorded ensemble or a system entangled with its environment. Those cases require a broader state description."
+    },
+    {
+      "scene": 26,
+      "start_seconds": 664.4533333333334,
+      "end_seconds": 680.8133333333334,
+      "start_frame": 19934,
+      "end_frame": 20424,
+      "text": "Two preparations give identical vertical-spin probabilities. Must all their measurement predictions be identical? Choose yes, no because relative phase may differ, or yes because normalization fixes the phase. Propose an additional measurement that could distinguish the preparations."
+    },
+    {
+      "scene": 26,
+      "start_seconds": 681.0333333333333,
+      "end_seconds": 686.0533333333333,
+      "start_frame": 20431,
+      "end_frame": 20582,
+      "text": "A good answer states what the available evidence does and does not determine."
+    },
+    {
+      "scene": 27,
+      "start_seconds": 692.7866666666667,
+      "end_seconds": 706.4566666666667,
+      "start_frame": 20784,
+      "end_frame": 21194,
+      "text": "Relative phase can distinguish those preparations. Open the browser Python lab, vary the state and measurement axis, and test your predictions before running the code. Then tackle an unfamiliar three-level measurement with a degenerate outcome."
+    },
+    {
+      "scene": 27,
+      "start_seconds": 706.6766666666667,
+      "end_seconds": 719.3766666666668,
+      "start_frame": 21200,
+      "end_frame": 21581,
+      "text": "Decide which coherence an ideal measurement preserves, compare independent calculations, and defend the assumptions. The postulates become useful when you can explain a new experiment, not merely repeat their names."
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "Q1",
+      "scene": 2,
+      "review_scene": 0,
+      "question": "For the spin degree of freedom of a spin-½ system, what is the complex Hilbert-space dimension?",
+      "options": [
+        "Two.",
+        "Three, because there are three spatial axes.",
+        "Infinite, even when all other degrees of freedom are excluded."
+      ],
+      "correct": 0,
+      "explanation": "Two independent spin states span the spin-only space. Different measurement axes select different bases in that same space.",
+      "wrong": {
+        "1": "Apparatus directions are not independent spin degrees of freedom. A continuum of axes still acts in the same two-dimensional spin space.",
+        "2": "Position can require an infinite-dimensional space, but position and other degrees of freedom are explicitly excluded here."
+      },
+      "time_seconds": 73,
+      "frame": 2190,
+      "review_seconds": 0.0,
+      "hold_start_frame": 2170,
+      "reveal_frame": 2365,
+      "timestamp": "01:13"
+    },
+    {
+      "id": "Q2",
+      "scene": 6,
+      "review_scene": 4,
+      "question": "Prepare |x+⟩ and measure S_z once. Which results can the ideal detector report?",
+      "options": [
+        "Zero, because the expectation is zero.",
+        "Any angular momentum between −ħ/2 and +ħ/2.",
+        "Either +ħ/2 or −ħ/2."
+      ],
+      "correct": 2,
+      "explanation": "A single ideal projective measurement yields an eigenvalue. In |x+⟩ these two outcomes each have probability 1/2; zero is their expectation, not a detector outcome.",
+      "wrong": {
+        "0": "An ensemble average is not necessarily an eigenvalue. Find the spectrum of S_z before predicting a single shot.",
+        "1": "This spin observable has a discrete two-value spectrum. A classical continuous projection of a rotating arrow is not the model."
+      },
+      "time_seconds": 173,
+      "frame": 5190,
+      "review_seconds": 103.36666666666666,
+      "hold_start_frame": 5173,
+      "reveal_frame": 5368,
+      "timestamp": "02:53"
+    },
+    {
+      "id": "Q3",
+      "scene": 10,
+      "review_scene": 8,
+      "question": "After recording x+ in an ideal S_x measurement, what is P(z+) in an immediate S_z measurement?",
+      "options": [
+        "The original preparation probability, 0.6.",
+        "1/2.",
+        "1."
+      ],
+      "correct": 1,
+      "explanation": "Condition on the recorded first result: the new state is |x+⟩. Its overlap squared with |z+⟩ is 1/2.",
+      "wrong": {
+        "0": "The recorded first measurement changes the conditional state. Reusing the preparation amplitudes skips the projection-and-normalization step.",
+        "2": "Immediate repetition of S_x would repeat x+ with certainty. The second observable here is S_z, so use a different eigenbasis."
+      },
+      "time_seconds": 270,
+      "frame": 8100,
+      "review_seconds": 204.5,
+      "hold_start_frame": 8073,
+      "reveal_frame": 8268,
+      "timestamp": "04:30"
+    },
+    {
+      "id": "Q4",
+      "scene": 14,
+      "review_scene": 12,
+      "question": "The theory gives ⟨S_z⟩ = 0.1ħ and P(z+) = 0.6. What does that mean?",
+      "options": [
+        "The probability-weighted theoretical mean is 0.1ħ; finite samples fluctuate.",
+        "Each detector result equals 0.1ħ.",
+        "Every batch of 1000 contains exactly 600 plus results."
+      ],
+      "correct": 0,
+      "explanation": "The mean is an ensemble prediction. Individual outcomes are ±ħ/2 and the number of plus results in independent trials is binomial.",
+      "wrong": {
+        "1": "0.1ħ is not in the spectrum of S_z. Distinguish a mean of detector results from one detector result.",
+        "2": "600 is the expected count, not a guarantee. The binomial count standard deviation is √(1000×0.6×0.4) ≈ 15.5."
+      },
+      "time_seconds": 372,
+      "frame": 11160,
+      "review_seconds": 301.53333333333336,
+      "hold_start_frame": 11146,
+      "reveal_frame": 11341,
+      "timestamp": "06:12"
+    },
+    {
+      "id": "Q5",
+      "scene": 18,
+      "review_scene": 16,
+      "question": "Prepare |z+⟩, measure S_x and discard its result, then measure S_z. What is P(z+)?",
+      "options": [
+        "1, because ignoring the record means nothing changed.",
+        "0, because incompatible measurements forbid z+.",
+        "1/2."
+      ],
+      "correct": 2,
+      "explanation": "The unrecorded ideal S_x measurement leaves an equal mixture of |x+⟩ and |x−⟩. Each gives P(z+) = 1/2.",
+      "wrong": {
+        "0": "Discarding a measurement record is not the same as omitting the measurement. Average the conditional post-measurement branches.",
+        "1": "Incompatibility does not forbid either z outcome. Compute both conditional branches and their probabilities."
+      },
+      "time_seconds": 474,
+      "frame": 14220,
+      "review_seconds": 402.76666666666665,
+      "hold_start_frame": 14201,
+      "reveal_frame": 14396,
+      "timestamp": "07:54"
+    },
+    {
+      "id": "Q6",
+      "scene": 22,
+      "review_scene": 20,
+      "question": "Start in |x+⟩ and evolve with H = ħωσ_z/2 through ωt = π. What is P(x+)?",
+      "options": [
+        "0.",
+        "1/2.",
+        "1."
+      ],
+      "correct": 0,
+      "explanation": "The relative phase changes |x+⟩ into |x−⟩ up to an overall phase. Thus P(x+) = cos²(π/2) = 0, while both z probabilities remain 1/2.",
+      "wrong": {
+        "1": "The z distribution stays balanced, but the question asks about x. Relative phase is observable in the x basis.",
+        "2": "An energy eigenstate would acquire only overall phase. |x+⟩ is a superposition of the z energy eigenstates."
+      },
+      "time_seconds": 579,
+      "frame": 17370,
+      "review_seconds": 505.6333333333333,
+      "hold_start_frame": 17343,
+      "reveal_frame": 17538,
+      "timestamp": "09:39"
+    },
+    {
+      "id": "Q7",
+      "scene": 26,
+      "review_scene": 24,
+      "question": "Two pure preparations have identical z-spin probabilities. Must all measurement predictions agree?",
+      "options": [
+        "Yes; the z probabilities completely specify every pure spin state.",
+        "No; different relative phases can be distinguished in other bases.",
+        "Yes; normalization uniquely determines the relative phase."
+      ],
+      "correct": 1,
+      "explanation": "One basis fixes populations but leaves relative phase undetermined. Additional x/y statistics can distinguish those states; include uncertainty and preparation assumptions.",
+      "wrong": {
+        "0": "Equal probabilities in one basis do not specify all amplitudes. Test another measurement direction.",
+        "2": "Normalization constrains squared magnitudes, not the remaining relative phase. A global phase is unobservable, but relative phase can matter."
+      },
+      "time_seconds": 687,
+      "frame": 20610,
+      "review_seconds": 609.9,
+      "hold_start_frame": 20582,
+      "reveal_frame": 20777,
+      "timestamp": "11:27"
+    }
+  ],
+  "captions": [
+    {
+      "id": 1,
+      "start_seconds": 0.22,
+      "end_seconds": 3.18,
+      "text": "Imagine preparing many identical spin one-half\nsystems.",
+      "start_frame": 6,
+      "end_frame": 96
+    },
+    {
+      "id": 2,
+      "start_seconds": 3.84,
+      "end_seconds": 6.76,
+      "text": "Measuring along the vertical axis gives sixty\npercent plus outcomes.",
+      "start_frame": 115,
+      "end_frame": 203
+    },
+    {
+      "id": 3,
+      "start_seconds": 7.42,
+      "end_seconds": 9.28,
+      "text": "Have you completely identified the quantum\nstate?",
+      "start_frame": 222,
+      "end_frame": 279
+    },
+    {
+      "id": 4,
+      "start_seconds": 10.26,
+      "end_seconds": 10.94,
+      "text": "Surprisingly, no.",
+      "start_frame": 307,
+      "end_frame": 329
+    },
+    {
+      "id": 5,
+      "start_seconds": 11.44,
+      "end_seconds": 16.4,
+      "text": "To understand why, we need the formalism:\nstates, operators, probabilities,",
+      "start_frame": 343,
+      "end_frame": 492
+    },
+    {
+      "id": 6,
+      "start_seconds": 17.26,
+      "end_seconds": 18.82,
+      "text": "measurement updates, and time evolution.",
+      "start_frame": 517,
+      "end_frame": 565
+    },
+    {
+      "id": 7,
+      "start_seconds": 19.84,
+      "end_seconds": 23.98,
+      "text": "Our small two-level laboratory will turn those\npostulates into predictions you can",
+      "start_frame": 595,
+      "end_frame": 720
+    },
+    {
+      "id": 8,
+      "start_seconds": 23.98,
+      "end_seconds": 24.26,
+      "text": "test.",
+      "start_frame": 719,
+      "end_frame": 728
+    },
+    {
+      "id": 9,
+      "start_seconds": 25.353,
+      "end_seconds": 29.633,
+      "text": "A pure state is represented by a normalized\nket in a complex Hilbert space.",
+      "start_frame": 760,
+      "end_frame": 889
+    },
+    {
+      "id": 10,
+      "start_seconds": 30.413,
+      "end_seconds": 35.253,
+      "text": "A bra is its conjugate transpose, so the inner\nproduct includes complex conjugation.",
+      "start_frame": 912,
+      "end_frame": 1058
+    },
+    {
+      "id": 11,
+      "start_seconds": 35.873,
+      "end_seconds": 40.233,
+      "text": "In an orthonormal two-state basis, the\ncoefficients are probability amplitudes.",
+      "start_frame": 1076,
+      "end_frame": 1207
+    },
+    {
+      "id": 12,
+      "start_seconds": 40.233,
+      "end_seconds": 42.593,
+      "text": "Their squared magnitudes sum to one.",
+      "start_frame": 1206,
+      "end_frame": 1278
+    },
+    {
+      "id": 13,
+      "start_seconds": 43.093,
+      "end_seconds": 46.493,
+      "text": "Changing basis changes the coordinates, not\nthe preparation.",
+      "start_frame": 1292,
+      "end_frame": 1395
+    },
+    {
+      "id": 14,
+      "start_seconds": 47.193,
+      "end_seconds": 51.033,
+      "text": "A common overall phase also leaves every\nmeasurement probability unchanged.",
+      "start_frame": 1415,
+      "end_frame": 1531
+    },
+    {
+      "id": 15,
+      "start_seconds": 52.353,
+      "end_seconds": 53.313,
+      "text": "Pause and predict.",
+      "start_frame": 1570,
+      "end_frame": 1600
+    },
+    {
+      "id": 16,
+      "start_seconds": 54.213,
+      "end_seconds": 56.433,
+      "text": "Spin can be measured along three spatial axes.",
+      "start_frame": 1626,
+      "end_frame": 1693
+    },
+    {
+      "id": 17,
+      "start_seconds": 57.093,
+      "end_seconds": 59.273,
+      "text": "Does that make its spin Hilbert space\nthree-dimensional?",
+      "start_frame": 1712,
+      "end_frame": 1779
+    },
+    {
+      "id": 18,
+      "start_seconds": 59.973,
+      "end_seconds": 64.373,
+      "text": "Choose between two dimensions, three\ndimensions, and infinitely many dimensions.",
+      "start_frame": 1799,
+      "end_frame": 1932
+    },
+    {
+      "id": 19,
+      "start_seconds": 64.983,
+      "end_seconds": 68.843,
+      "text": "Distinguish the number of possible apparatus\norientations from the number of",
+      "start_frame": 1949,
+      "end_frame": 2066
+    },
+    {
+      "id": 20,
+      "start_seconds": 68.843,
+      "end_seconds": 72.043,
+      "text": "independent states needed to describe this\ndegree of freedom.",
+      "start_frame": 2065,
+      "end_frame": 2162
+    },
+    {
+      "id": 21,
+      "start_seconds": 79.053,
+      "end_seconds": 81.493,
+      "text": "For spin one-half alone, the answer is two.",
+      "start_frame": 2371,
+      "end_frame": 2445
+    },
+    {
+      "id": 22,
+      "start_seconds": 81.993,
+      "end_seconds": 85.493,
+      "text": "The plus and minus vertical-spin states form a\ncomplete basis.",
+      "start_frame": 2459,
+      "end_frame": 2565
+    },
+    {
+      "id": 23,
+      "start_seconds": 86.253,
+      "end_seconds": 89.853,
+      "text": "Measurements along other directions use\ndifferent bases in that same space.",
+      "start_frame": 2587,
+      "end_frame": 2696
+    },
+    {
+      "id": 24,
+      "start_seconds": 90.673,
+      "end_seconds": 94.153,
+      "text": "Position and other degrees of freedom require\nadditional structure; we have",
+      "start_frame": 2720,
+      "end_frame": 2825
+    },
+    {
+      "id": 25,
+      "start_seconds": 94.153,
+      "end_seconds": 95.453,
+      "text": "deliberately excluded them.",
+      "start_frame": 2824,
+      "end_frame": 2864
+    },
+    {
+      "id": 26,
+      "start_seconds": 95.893,
+      "end_seconds": 98.613,
+      "text": "The Bloch arrow summarizes a two-level state.",
+      "start_frame": 2876,
+      "end_frame": 2959
+    },
+    {
+      "id": 27,
+      "start_seconds": 99.233,
+      "end_seconds": 102.393,
+      "text": "It is not a tiny spinning ball or a particle\ntrajectory.",
+      "start_frame": 2976,
+      "end_frame": 3072
+    },
+    {
+      "id": 28,
+      "start_seconds": 103.587,
+      "end_seconds": 107.267,
+      "text": "An observable is represented here by a\nHermitian operator.",
+      "start_frame": 3107,
+      "end_frame": 3219
+    },
+    {
+      "id": 29,
+      "start_seconds": 108.147,
+      "end_seconds": 111.767,
+      "text": "Its eigenvalues are possible results of an\nideal projective measurement.",
+      "start_frame": 3244,
+      "end_frame": 3354
+    },
+    {
+      "id": 30,
+      "start_seconds": 112.627,
+      "end_seconds": 117.867,
+      "text": "Its eigenvectors, or more generally its\neigenspaces, describe states with definite",
+      "start_frame": 3378,
+      "end_frame": 3537
+    },
+    {
+      "id": 31,
+      "start_seconds": 117.867,
+      "end_seconds": 118.427,
+      "text": "values.",
+      "start_frame": 3536,
+      "end_frame": 3553
+    },
+    {
+      "id": 32,
+      "start_seconds": 119.247,
+      "end_seconds": 121.267,
+      "text": "Hermiticity gives real eigenvalues.",
+      "start_frame": 3577,
+      "end_frame": 3639
+    },
+    {
+      "id": 33,
+      "start_seconds": 121.917,
+      "end_seconds": 126.597,
+      "text": "Completeness of the orthogonal spectral\nprojectors guarantees that the probabilities",
+      "start_frame": 3657,
+      "end_frame": 3798
+    },
+    {
+      "id": 34,
+      "start_seconds": 126.597,
+      "end_seconds": 129.437,
+      "text": "for all mutually exclusive outcomes add to\none.",
+      "start_frame": 3797,
+      "end_frame": 3884
+    },
+    {
+      "id": 35,
+      "start_seconds": 130.52,
+      "end_seconds": 134.72,
+      "text": "The Pauli z matrix has eigenvalues plus one\nand minus one.",
+      "start_frame": 3915,
+      "end_frame": 4042
+    },
+    {
+      "id": 36,
+      "start_seconds": 135.68,
+      "end_seconds": 140.3,
+      "text": "Physical z spin is h-bar divided by two times\nthat matrix, so the measured angular",
+      "start_frame": 4070,
+      "end_frame": 4209
+    },
+    {
+      "id": 37,
+      "start_seconds": 140.3,
+      "end_seconds": 142.94,
+      "text": "momenta are plus or minus h-bar over two.",
+      "start_frame": 4209,
+      "end_frame": 4289
+    },
+    {
+      "id": 38,
+      "start_seconds": 143.74,
+      "end_seconds": 146.34,
+      "text": "H-bar is Planck's constant divided by two pi.",
+      "start_frame": 4312,
+      "end_frame": 4391
+    },
+    {
+      "id": 39,
+      "start_seconds": 146.87,
+      "end_seconds": 152.23,
+      "text": "Never silently exchange a dimensionless Pauli\nexpectation with a physical spin",
+      "start_frame": 4406,
+      "end_frame": 4567
+    },
+    {
+      "id": 40,
+      "start_seconds": 152.23,
+      "end_seconds": 152.65,
+      "text": "value.",
+      "start_frame": 4566,
+      "end_frame": 4580
+    },
+    {
+      "id": 41,
+      "start_seconds": 153.753,
+      "end_seconds": 157.173,
+      "text": "Prepare the horizontal plus state and measure\nvertical spin once.",
+      "start_frame": 4612,
+      "end_frame": 4716
+    },
+    {
+      "id": 42,
+      "start_seconds": 157.853,
+      "end_seconds": 161.213,
+      "text": "Can the detector report zero because the\naverage vertical spin is zero?",
+      "start_frame": 4735,
+      "end_frame": 4837
+    },
+    {
+      "id": 43,
+      "start_seconds": 161.873,
+      "end_seconds": 166.893,
+      "text": "Predict: zero every time, either plus or minus\nh-bar over two, or any value between",
+      "start_frame": 4856,
+      "end_frame": 5007
+    },
+    {
+      "id": 44,
+      "start_seconds": 166.893,
+      "end_seconds": 167.513,
+      "text": "those extremes.",
+      "start_frame": 5006,
+      "end_frame": 5026
+    },
+    {
+      "id": 45,
+      "start_seconds": 168.163,
+      "end_seconds": 172.123,
+      "text": "Give a reason based on the observable, not on\na classical picture of an arrow.",
+      "start_frame": 5044,
+      "end_frame": 5164
+    },
+    {
+      "id": 46,
+      "start_seconds": 179.153,
+      "end_seconds": 184.053,
+      "text": "The detector reports one of the two\neigenvalues, each with probability one half in\nthis",
+      "start_frame": 5374,
+      "end_frame": 5522
+    },
+    {
+      "id": 47,
+      "start_seconds": 184.053,
+      "end_seconds": 184.613,
+      "text": "preparation.",
+      "start_frame": 5521,
+      "end_frame": 5539
+    },
+    {
+      "id": 48,
+      "start_seconds": 185.613,
+      "end_seconds": 189.173,
+      "text": "Zero is the expectation value, not a possible\nsingle-shot result.",
+      "start_frame": 5568,
+      "end_frame": 5676
+    },
+    {
+      "id": 49,
+      "start_seconds": 189.743,
+      "end_seconds": 194.363,
+      "text": "Writing an operator in its spectral form, as\neigenvalue times projector summed over",
+      "start_frame": 5692,
+      "end_frame": 5831
+    },
+    {
+      "id": 50,
+      "start_seconds": 194.363,
+      "end_seconds": 196.983,
+      "text": "outcomes, makes this distinction explicit.",
+      "start_frame": 5830,
+      "end_frame": 5910
+    },
+    {
+      "id": 51,
+      "start_seconds": 197.903,
+      "end_seconds": 202.883,
+      "text": "Degenerate eigenvalues correspond to whole\neigenspaces rather than a uniquely selected",
+      "start_frame": 5937,
+      "end_frame": 6087
+    },
+    {
+      "id": 52,
+      "start_seconds": 202.883,
+      "end_seconds": 203.583,
+      "text": "eigenvector.",
+      "start_frame": 6086,
+      "end_frame": 6108
+    },
+    {
+      "id": 53,
+      "start_seconds": 204.72,
+      "end_seconds": 209.08,
+      "text": "For an ideal measurement, the probability of\nan outcome is the squared length of the",
+      "start_frame": 6141,
+      "end_frame": 6273
+    },
+    {
+      "id": 54,
+      "start_seconds": 209.08,
+      "end_seconds": 210.88,
+      "text": "state projected into its eigenspace.",
+      "start_frame": 6272,
+      "end_frame": 6327
+    },
+    {
+      "id": 55,
+      "start_seconds": 211.54,
+      "end_seconds": 215.88,
+      "text": "For a nondegenerate outcome, this is the\nsquared magnitude of the inner product with",
+      "start_frame": 6346,
+      "end_frame": 6477
+    },
+    {
+      "id": 56,
+      "start_seconds": 215.88,
+      "end_seconds": 216.5,
+      "text": "its eigenket.",
+      "start_frame": 6476,
+      "end_frame": 6495
+    },
+    {
+      "id": 57,
+      "start_seconds": 217.04,
+      "end_seconds": 219.14,
+      "text": "Amplitudes can be complex or negative.",
+      "start_frame": 6511,
+      "end_frame": 6575
+    },
+    {
+      "id": 58,
+      "start_seconds": 219.78,
+      "end_seconds": 220.66,
+      "text": "Probabilities cannot.",
+      "start_frame": 6593,
+      "end_frame": 6620
+    },
+    {
+      "id": 59,
+      "start_seconds": 221.29,
+      "end_seconds": 225.85,
+      "text": "Taking a coefficient directly as a probability\ncan give an impossible answer.",
+      "start_frame": 6638,
+      "end_frame": 6776
+    },
+    {
+      "id": 60,
+      "start_seconds": 226.953,
+      "end_seconds": 231.513,
+      "text": "Our example has vertical plus probability zero\npoint six and vertical minus probability",
+      "start_frame": 6808,
+      "end_frame": 6946
+    },
+    {
+      "id": 61,
+      "start_seconds": 231.513,
+      "end_seconds": 232.613,
+      "text": "zero point four.",
+      "start_frame": 6945,
+      "end_frame": 6979
+    },
+    {
+      "id": 62,
+      "start_seconds": 233.173,
+      "end_seconds": 237.213,
+      "text": "Its relative phase does not appear in those\ntwo numbers, but it matters in other bases.",
+      "start_frame": 6995,
+      "end_frame": 7117
+    },
+    {
+      "id": 63,
+      "start_seconds": 237.873,
+      "end_seconds": 242.253,
+      "text": "If an outcome is recorded, the conditional\npost-measurement state is the projected ket",
+      "start_frame": 7136,
+      "end_frame": 7268
+    },
+    {
+      "id": 64,
+      "start_seconds": 242.253,
+      "end_seconds": 243.353,
+      "text": "divided by its norm.",
+      "start_frame": 7267,
+      "end_frame": 7301
+    },
+    {
+      "id": 65,
+      "start_seconds": 244.053,
+      "end_seconds": 248.273,
+      "text": "An impossible outcome has no conditional\nstate; division by zero is not physics.",
+      "start_frame": 7321,
+      "end_frame": 7449
+    },
+    {
+      "id": 66,
+      "start_seconds": 249.553,
+      "end_seconds": 252.093,
+      "text": "Suppose the first measurement records\nhorizontal plus.",
+      "start_frame": 7486,
+      "end_frame": 7563
+    },
+    {
+      "id": 67,
+      "start_seconds": 252.093,
+      "end_seconds": 256.013,
+      "text": "Immediately measure vertical spin, with no\nintervening evolution.",
+      "start_frame": 7562,
+      "end_frame": 7681
+    },
+    {
+      "id": 68,
+      "start_seconds": 256.813,
+      "end_seconds": 261.233,
+      "text": "Is the probability of vertical plus still zero\npoint six, now one half, or now one?",
+      "start_frame": 7704,
+      "end_frame": 7837
+    },
+    {
+      "id": 69,
+      "start_seconds": 261.933,
+      "end_seconds": 264.353,
+      "text": "Predict using the state after the first\nrecorded result.",
+      "start_frame": 7857,
+      "end_frame": 7931
+    },
+    {
+      "id": 70,
+      "start_seconds": 264.863,
+      "end_seconds": 268.743,
+      "text": "Reusing the original preparation is a common\nbut consequential mistake.",
+      "start_frame": 7945,
+      "end_frame": 8063
+    },
+    {
+      "id": 71,
+      "start_seconds": 275.82,
+      "end_seconds": 277.42,
+      "text": "The probability is one half.",
+      "start_frame": 8274,
+      "end_frame": 8323
+    },
+    {
+      "id": 72,
+      "start_seconds": 278.22,
+      "end_seconds": 283.34,
+      "text": "Conditional on horizontal plus, the state is\nthe horizontal plus eigenstate, regardless",
+      "start_frame": 8346,
+      "end_frame": 8501
+    },
+    {
+      "id": 73,
+      "start_seconds": 283.34,
+      "end_seconds": 284.74,
+      "text": "of the original amplitudes.",
+      "start_frame": 8500,
+      "end_frame": 8543
+    },
+    {
+      "id": 74,
+      "start_seconds": 285.44,
+      "end_seconds": 290.04,
+      "text": "If we repeat the same horizontal measurement\nimmediately, its recorded value repeats",
+      "start_frame": 8563,
+      "end_frame": 8702
+    },
+    {
+      "id": 75,
+      "start_seconds": 290.04,
+      "end_seconds": 291.86,
+      "text": "with certainty in this ideal model.",
+      "start_frame": 8701,
+      "end_frame": 8756
+    },
+    {
+      "id": 76,
+      "start_seconds": 292.35,
+      "end_seconds": 297.25,
+      "text": "If we discard an intermediate outcome instead,\nwe must average over its possible",
+      "start_frame": 8770,
+      "end_frame": 8918
+    },
+    {
+      "id": 77,
+      "start_seconds": 297.25,
+      "end_seconds": 300.61,
+      "text": "post-measurement states, rather than\npretending nothing happened.",
+      "start_frame": 8917,
+      "end_frame": 9019
+    },
+    {
+      "id": 78,
+      "start_seconds": 301.753,
+      "end_seconds": 305.933,
+      "text": "An expectation value combines the possible\noutcomes with their Born probabilities.",
+      "start_frame": 9052,
+      "end_frame": 9178
+    },
+    {
+      "id": 79,
+      "start_seconds": 306.673,
+      "end_seconds": 311.633,
+      "text": "For our vertical measurement, sixty percent\nplus h-bar over two and forty percent minus",
+      "start_frame": 9200,
+      "end_frame": 9349
+    },
+    {
+      "id": 80,
+      "start_seconds": 311.633,
+      "end_seconds": 315.633,
+      "text": "h-bar over two give an average of zero point\none h-bar.",
+      "start_frame": 9348,
+      "end_frame": 9469
+    },
+    {
+      "id": 81,
+      "start_seconds": 316.233,
+      "end_seconds": 319.233,
+      "text": "That average describes many identically\nprepared systems.",
+      "start_frame": 9486,
+      "end_frame": 9577
+    },
+    {
+      "id": 82,
+      "start_seconds": 319.833,
+      "end_seconds": 324.113,
+      "text": "It does not mean that each system contains a\nlittle fraction of each detector result.",
+      "start_frame": 9594,
+      "end_frame": 9724
+    },
+    {
+      "id": 83,
+      "start_seconds": 325.253,
+      "end_seconds": 328.513,
+      "text": "Compute the expectation as bra, operator, ket.",
+      "start_frame": 9757,
+      "end_frame": 9856
+    },
+    {
+      "id": 84,
+      "start_seconds": 329.153,
+      "end_seconds": 332.673,
+      "text": "Then independently compute the\nprobability-weighted eigenvalue sum.",
+      "start_frame": 9874,
+      "end_frame": 9981
+    },
+    {
+      "id": 85,
+      "start_seconds": 333.153,
+      "end_seconds": 334.073,
+      "text": "They must agree.",
+      "start_frame": 9994,
+      "end_frame": 10023
+    },
+    {
+      "id": 86,
+      "start_seconds": 334.543,
+      "end_seconds": 338.923,
+      "text": "For one thousand independent preparations, the\nexpected number of vertical plus",
+      "start_frame": 10036,
+      "end_frame": 10168
+    },
+    {
+      "id": 87,
+      "start_seconds": 338.923,
+      "end_seconds": 343.483,
+      "text": "outcomes is six hundred, with a binomial\nstandard deviation of about fifteen point",
+      "start_frame": 10167,
+      "end_frame": 10305
+    },
+    {
+      "id": 88,
+      "start_seconds": 343.483,
+      "end_seconds": 344.123,
+      "text": "five.",
+      "start_frame": 10304,
+      "end_frame": 10324
+    },
+    {
+      "id": 89,
+      "start_seconds": 344.683,
+      "end_seconds": 349.683,
+      "text": "A simulated histogram illustrates sampling\nfluctuations; it is not a claim of measured",
+      "start_frame": 10340,
+      "end_frame": 10491
+    },
+    {
+      "id": 90,
+      "start_seconds": 349.683,
+      "end_seconds": 350.563,
+      "text": "laboratory data.",
+      "start_frame": 10490,
+      "end_frame": 10517
+    },
+    {
+      "id": 91,
+      "start_seconds": 351.587,
+      "end_seconds": 354.647,
+      "text": "The predicted mean vertical spin is zero point\none h-bar.",
+      "start_frame": 10547,
+      "end_frame": 10640
+    },
+    {
+      "id": 92,
+      "start_seconds": 355.187,
+      "end_seconds": 355.967,
+      "text": "Which statement follows?",
+      "start_frame": 10655,
+      "end_frame": 10680
+    },
+    {
+      "id": 93,
+      "start_seconds": 356.667,
+      "end_seconds": 361.107,
+      "text": "Every individual detector result equals that\nmean, the mean is approached statistically",
+      "start_frame": 10700,
+      "end_frame": 10834
+    },
+    {
+      "id": 94,
+      "start_seconds": 361.107,
+      "end_seconds": 366.147,
+      "text": "across many preparations, or exactly six\nhundred of every thousand results must be",
+      "start_frame": 10833,
+      "end_frame": 10985
+    },
+    {
+      "id": 95,
+      "start_seconds": 366.147,
+      "end_seconds": 366.387,
+      "text": "plus?",
+      "start_frame": 10984,
+      "end_frame": 10992
+    },
+    {
+      "id": 96,
+      "start_seconds": 366.977,
+      "end_seconds": 371.197,
+      "text": "Choose the statement that respects both the\noperator spectrum and random sampling.",
+      "start_frame": 11009,
+      "end_frame": 11136
+    },
+    {
+      "id": 97,
+      "start_seconds": 378.253,
+      "end_seconds": 379.713,
+      "text": "The second statement is correct.",
+      "start_frame": 11347,
+      "end_frame": 11392
+    },
+    {
+      "id": 98,
+      "start_seconds": 380.453,
+      "end_seconds": 385.473,
+      "text": "The expectation is a probability-weighted\ntheoretical mean; a finite sample fluctuates.",
+      "start_frame": 11413,
+      "end_frame": 11565
+    },
+    {
+      "id": 99,
+      "start_seconds": 386.353,
+      "end_seconds": 390.233,
+      "text": "Increasing the number of independent trials\nnarrows the uncertainty of the estimated",
+      "start_frame": 11590,
+      "end_frame": 11707
+    },
+    {
+      "id": 100,
+      "start_seconds": 390.233,
+      "end_seconds": 393.493,
+      "text": "mean, but does not create new single-shot\neigenvalues.",
+      "start_frame": 11706,
+      "end_frame": 11805
+    },
+    {
+      "id": 101,
+      "start_seconds": 394.203,
+      "end_seconds": 399.463,
+      "text": "In your notebook, change the sample size and\nseed, report uncertainty, and compare the",
+      "start_frame": 11826,
+      "end_frame": 11984
+    },
+    {
+      "id": 102,
+      "start_seconds": 399.463,
+      "end_seconds": 401.723,
+      "text": "observed deviation with the binomial\nprediction.",
+      "start_frame": 11983,
+      "end_frame": 12052
+    },
+    {
+      "id": 103,
+      "start_seconds": 402.987,
+      "end_seconds": 404.147,
+      "text": "Prepare vertical plus.",
+      "start_frame": 12089,
+      "end_frame": 12125
+    },
+    {
+      "id": 104,
+      "start_seconds": 404.887,
+      "end_seconds": 407.567,
+      "text": "An immediate vertical measurement gives plus\nwith certainty.",
+      "start_frame": 12146,
+      "end_frame": 12228
+    },
+    {
+      "id": 105,
+      "start_seconds": 408.247,
+      "end_seconds": 410.867,
+      "text": "Now insert a horizontal measurement and ignore\nits result.",
+      "start_frame": 12247,
+      "end_frame": 12327
+    },
+    {
+      "id": 106,
+      "start_seconds": 411.527,
+      "end_seconds": 415.687,
+      "text": "The resulting ensemble is an equal mixture of\nhorizontal plus and horizontal minus.",
+      "start_frame": 12345,
+      "end_frame": 12471
+    },
+    {
+      "id": 107,
+      "start_seconds": 416.307,
+      "end_seconds": 419.127,
+      "text": "A later vertical measurement gives plus only\nhalf the time.",
+      "start_frame": 12489,
+      "end_frame": 12574
+    },
+    {
+      "id": 108,
+      "start_seconds": 419.617,
+      "end_seconds": 423.497,
+      "text": "Ignoring the record is not the same operation\nas omitting the apparatus.",
+      "start_frame": 12588,
+      "end_frame": 12705
+    },
+    {
+      "id": 109,
+      "start_seconds": 424.753,
+      "end_seconds": 430.273,
+      "text": "For finite-dimensional Hermitian observables,\ncommuting operators can be simultaneously",
+      "start_frame": 12742,
+      "end_frame": 12909
+    },
+    {
+      "id": 110,
+      "start_seconds": 430.273,
+      "end_seconds": 431.433,
+      "text": "diagonalized.",
+      "start_frame": 12908,
+      "end_frame": 12943
+    },
+    {
+      "id": 111,
+      "start_seconds": 432.113,
+      "end_seconds": 434.393,
+      "text": "Horizontal and vertical spin do not commute.",
+      "start_frame": 12963,
+      "end_frame": 13032
+    },
+    {
+      "id": 112,
+      "start_seconds": 435.033,
+      "end_seconds": 437.213,
+      "text": "Their ideal measurement order can therefore\nmatter.",
+      "start_frame": 13050,
+      "end_frame": 13117
+    },
+    {
+      "id": 113,
+      "start_seconds": 437.733,
+      "end_seconds": 443.033,
+      "text": "But a zero expectation of their commutator in\none specially chosen state does not make",
+      "start_frame": 13131,
+      "end_frame": 13291
+    },
+    {
+      "id": 114,
+      "start_seconds": 443.033,
+      "end_seconds": 444.653,
+      "text": "the commutator operator zero.",
+      "start_frame": 13290,
+      "end_frame": 13340
+    },
+    {
+      "id": 115,
+      "start_seconds": 445.993,
+      "end_seconds": 449.993,
+      "text": "Compatibility concerns the operators, not just\none number calculated in one",
+      "start_frame": 13379,
+      "end_frame": 13500
+    },
+    {
+      "id": 116,
+      "start_seconds": 449.993,
+      "end_seconds": 450.473,
+      "text": "preparation.",
+      "start_frame": 13499,
+      "end_frame": 13515
+    },
+    {
+      "id": 117,
+      "start_seconds": 451.72,
+      "end_seconds": 453.5,
+      "text": "Return to vertical plus preparation.",
+      "start_frame": 13551,
+      "end_frame": 13605
+    },
+    {
+      "id": 118,
+      "start_seconds": 454.56,
+      "end_seconds": 458.9,
+      "text": "Insert the horizontal measurement, discard its\nresult, and then measure vertical spin.",
+      "start_frame": 13636,
+      "end_frame": 13767
+    },
+    {
+      "id": 119,
+      "start_seconds": 459.52,
+      "end_seconds": 463.64,
+      "text": "Is vertical plus certain, impossible, or\nobtained with probability one half?",
+      "start_frame": 13785,
+      "end_frame": 13910
+    },
+    {
+      "id": 120,
+      "start_seconds": 464.22,
+      "end_seconds": 468.64,
+      "text": "Use the complete experimental sequence,\nincluding the disturbance associated with the",
+      "start_frame": 13926,
+      "end_frame": 14060
+    },
+    {
+      "id": 121,
+      "start_seconds": 468.64,
+      "end_seconds": 469.64,
+      "text": "intermediate measurement.",
+      "start_frame": 14059,
+      "end_frame": 14090
+    },
+    {
+      "id": 122,
+      "start_seconds": 470.46,
+      "end_seconds": 472.94,
+      "text": "State which idealizations your prediction\nassumes.",
+      "start_frame": 14113,
+      "end_frame": 14189
+    },
+    {
+      "id": 123,
+      "start_seconds": 480.087,
+      "end_seconds": 481.387,
+      "text": "The answer is one half.",
+      "start_frame": 14402,
+      "end_frame": 14442
+    },
+    {
+      "id": 124,
+      "start_seconds": 482.007,
+      "end_seconds": 486.667,
+      "text": "You can calculate each conditioned branch and\nthen average, or use the density matrix",
+      "start_frame": 14460,
+      "end_frame": 14601
+    },
+    {
+      "id": 125,
+      "start_seconds": 486.667,
+      "end_seconds": 488.247,
+      "text": "after the unrecorded measurement.",
+      "start_frame": 14600,
+      "end_frame": 14648
+    },
+    {
+      "id": 126,
+      "start_seconds": 488.887,
+      "end_seconds": 490.347,
+      "text": "Those independent routes agree.",
+      "start_frame": 14666,
+      "end_frame": 14711
+    },
+    {
+      "id": 127,
+      "start_seconds": 491.027,
+      "end_seconds": 494.947,
+      "text": "Our assumptions are ideal projective\nmeasurements and no evolution between them.",
+      "start_frame": 14730,
+      "end_frame": 14849
+    },
+    {
+      "id": 128,
+      "start_seconds": 495.387,
+      "end_seconds": 498.627,
+      "text": "A real apparatus may have additional errors or\ndynamics.",
+      "start_frame": 14861,
+      "end_frame": 14959
+    },
+    {
+      "id": 129,
+      "start_seconds": 499.407,
+      "end_seconds": 502.987,
+      "text": "Testing this model requires checking those\nconditions rather than treating every",
+      "start_frame": 14982,
+      "end_frame": 15090
+    },
+    {
+      "id": 130,
+      "start_seconds": 502.987,
+      "end_seconds": 504.707,
+      "text": "discrepancy as a new postulate.",
+      "start_frame": 15089,
+      "end_frame": 15142
+    },
+    {
+      "id": 131,
+      "start_seconds": 505.853,
+      "end_seconds": 510.753,
+      "text": "For an isolated system, the Schrödinger\nequation generates unitary time evolution.",
+      "start_frame": 15175,
+      "end_frame": 15323
+    },
+    {
+      "id": 132,
+      "start_seconds": 511.593,
+      "end_seconds": 514.953,
+      "text": "A time-independent Hamiltonian gives an\nexponential operator.",
+      "start_frame": 15347,
+      "end_frame": 15449
+    },
+    {
+      "id": 133,
+      "start_seconds": 515.593,
+      "end_seconds": 519.253,
+      "text": "An energy eigenstate acquires only an overall\nphase, leaving",
+      "start_frame": 15467,
+      "end_frame": 15578
+    },
+    {
+      "id": 134,
+      "start_seconds": 519.253,
+      "end_seconds": 522.233,
+      "text": "time-independent-observable probabilities\nunchanged.",
+      "start_frame": 15577,
+      "end_frame": 15667
+    },
+    {
+      "id": 135,
+      "start_seconds": 522.953,
+      "end_seconds": 527.413,
+      "text": "A superposition of different energies\naccumulates relative phase, which can change",
+      "start_frame": 15688,
+      "end_frame": 15823
+    },
+    {
+      "id": 136,
+      "start_seconds": 527.413,
+      "end_seconds": 529.373,
+      "text": "interference and expectation values.",
+      "start_frame": 15822,
+      "end_frame": 15882
+    },
+    {
+      "id": 137,
+      "start_seconds": 530.113,
+      "end_seconds": 533.593,
+      "text": "Stationary does not mean that the ket has\nliterally stopped acquiring phase.",
+      "start_frame": 15903,
+      "end_frame": 16008
+    },
+    {
+      "id": 138,
+      "start_seconds": 534.82,
+      "end_seconds": 539.88,
+      "text": "Start in horizontal plus and choose the\nHamiltonian proportional to the Pauli z\nmatrix.",
+      "start_frame": 16044,
+      "end_frame": 16197
+    },
+    {
+      "id": 139,
+      "start_seconds": 540.94,
+      "end_seconds": 544.42,
+      "text": "Write the dimensionless rotation angle as\nomega times time.",
+      "start_frame": 16228,
+      "end_frame": 16333
+    },
+    {
+      "id": 140,
+      "start_seconds": 545.46,
+      "end_seconds": 550.4,
+      "text": "Vertical probabilities stay one half, but\nhorizontal plus probability oscillates as",
+      "start_frame": 16363,
+      "end_frame": 16512
+    },
+    {
+      "id": 141,
+      "start_seconds": 550.4,
+      "end_seconds": 552.14,
+      "text": "cosine squared of half that angle.",
+      "start_frame": 16512,
+      "end_frame": 16565
+    },
+    {
+      "id": 142,
+      "start_seconds": 552.6,
+      "end_seconds": 555.54,
+      "text": "At a pi rotation the state is horizontal\nminus.",
+      "start_frame": 16578,
+      "end_frame": 16667
+    },
+    {
+      "id": 143,
+      "start_seconds": 556.44,
+      "end_seconds": 559.84,
+      "text": "Unchanged vertical statistics alone would miss\nthis entire change.",
+      "start_frame": 16693,
+      "end_frame": 16796
+    },
+    {
+      "id": 144,
+      "start_seconds": 560.987,
+      "end_seconds": 564.527,
+      "text": "After that pi rotation, what is the\nprobability of horizontal plus?",
+      "start_frame": 16829,
+      "end_frame": 16936
+    },
+    {
+      "id": 145,
+      "start_seconds": 565.207,
+      "end_seconds": 567.227,
+      "text": "Predict zero, one half, or one.",
+      "start_frame": 16956,
+      "end_frame": 17017
+    },
+    {
+      "id": 146,
+      "start_seconds": 567.847,
+      "end_seconds": 570.687,
+      "text": "Then ask why the vertical measurement still\ngives equal probabilities.",
+      "start_frame": 17035,
+      "end_frame": 17121
+    },
+    {
+      "id": 147,
+      "start_seconds": 571.167,
+      "end_seconds": 572.387,
+      "text": "Keep track of relative phase.",
+      "start_frame": 17135,
+      "end_frame": 17172
+    },
+    {
+      "id": 148,
+      "start_seconds": 572.947,
+      "end_seconds": 577.307,
+      "text": "A conclusion about every observable cannot be\ninferred from measurements in a single",
+      "start_frame": 17188,
+      "end_frame": 17320
+    },
+    {
+      "id": 149,
+      "start_seconds": 577.307,
+      "end_seconds": 577.647,
+      "text": "basis.",
+      "start_frame": 17319,
+      "end_frame": 17330
+    },
+    {
+      "id": 150,
+      "start_seconds": 584.82,
+      "end_seconds": 587.02,
+      "text": "Horizontal plus probability is zero.",
+      "start_frame": 17544,
+      "end_frame": 17611
+    },
+    {
+      "id": 151,
+      "start_seconds": 587.82,
+      "end_seconds": 592.62,
+      "text": "In the laboratory, compare the analytic\nrotation with eigenvalue exponentiation and",
+      "start_frame": 17634,
+      "end_frame": 17779
+    },
+    {
+      "id": 152,
+      "start_seconds": 592.62,
+      "end_seconds": 595.0,
+      "text": "direct integration of the Schrödinger\nequation.",
+      "start_frame": 17778,
+      "end_frame": 17850
+    },
+    {
+      "id": 153,
+      "start_seconds": 596.14,
+      "end_seconds": 598.34,
+      "text": "Check norm conservation and solver\nconvergence.",
+      "start_frame": 17884,
+      "end_frame": 17951
+    },
+    {
+      "id": 154,
+      "start_seconds": 599.03,
+      "end_seconds": 604.31,
+      "text": "Changing omega changes the time scale;\nconfusing radians, cycles and seconds changes",
+      "start_frame": 17970,
+      "end_frame": 18130
+    },
+    {
+      "id": 155,
+      "start_seconds": 604.31,
+      "end_seconds": 604.87,
+      "text": "the prediction.",
+      "start_frame": 18129,
+      "end_frame": 18147
+    },
+    {
+      "id": 156,
+      "start_seconds": 605.79,
+      "end_seconds": 608.91,
+      "text": "Use the stated units and verify the limiting\ncase at time zero.",
+      "start_frame": 18173,
+      "end_frame": 18268
+    },
+    {
+      "id": 157,
+      "start_seconds": 610.12,
+      "end_seconds": 612.14,
+      "text": "We can now revisit the opening puzzle.",
+      "start_frame": 18303,
+      "end_frame": 18365
+    },
+    {
+      "id": 158,
+      "start_seconds": 613.12,
+      "end_seconds": 616.52,
+      "text": "Vertical probabilities determine populations,\nbut not the relative phase.",
+      "start_frame": 18393,
+      "end_frame": 18496
+    },
+    {
+      "id": 159,
+      "start_seconds": 617.32,
+      "end_seconds": 621.34,
+      "text": "Two different pure states can agree on those\ndata and disagree in another basis.",
+      "start_frame": 18519,
+      "end_frame": 18641
+    },
+    {
+      "id": 160,
+      "start_seconds": 622.16,
+      "end_seconds": 625.82,
+      "text": "Measuring horizontal and transverse spin\nprovides additional information.",
+      "start_frame": 18664,
+      "end_frame": 18775
+    },
+    {
+      "id": 161,
+      "start_seconds": 626.49,
+      "end_seconds": 630.97,
+      "text": "Inferring a state requires a model of\npreparation, a sufficient set of measurements,",
+      "start_frame": 18794,
+      "end_frame": 18930
+    },
+    {
+      "id": 162,
+      "start_seconds": 631.43,
+      "end_seconds": 635.63,
+      "text": "uncertainty estimates, and an honest statement\nof what remains undetermined.",
+      "start_frame": 18942,
+      "end_frame": 19069
+    },
+    {
+      "id": 163,
+      "start_seconds": 636.853,
+      "end_seconds": 642.153,
+      "text": "Our laboratory represents a pure two-level\nstate, an ideal observable and a",
+      "start_frame": 19105,
+      "end_frame": 19265
+    },
+    {
+      "id": 164,
+      "start_seconds": 642.153,
+      "end_seconds": 643.693,
+      "text": "defined sequence of operations.",
+      "start_frame": 19264,
+      "end_frame": 19311
+    },
+    {
+      "id": 165,
+      "start_seconds": 644.673,
+      "end_seconds": 649.993,
+      "text": "Normalize the state, find spectral projectors,\ncompute probabilities, condition on",
+      "start_frame": 19340,
+      "end_frame": 19500
+    },
+    {
+      "id": 166,
+      "start_seconds": 649.993,
+      "end_seconds": 652.773,
+      "text": "recorded outcomes, and evolve between\nmeasurements.",
+      "start_frame": 19499,
+      "end_frame": 19584
+    },
+    {
+      "id": 167,
+      "start_seconds": 653.473,
+      "end_seconds": 658.713,
+      "text": "Do not apply the pure-state picture blindly to\nan unrecorded ensemble or a system",
+      "start_frame": 19604,
+      "end_frame": 19762
+    },
+    {
+      "id": 168,
+      "start_seconds": 658.713,
+      "end_seconds": 660.073,
+      "text": "entangled with its environment.",
+      "start_frame": 19761,
+      "end_frame": 19803
+    },
+    {
+      "id": 169,
+      "start_seconds": 660.833,
+      "end_seconds": 663.233,
+      "text": "Those cases require a broader state\ndescription.",
+      "start_frame": 19824,
+      "end_frame": 19897
+    },
+    {
+      "id": 170,
+      "start_seconds": 664.453,
+      "end_seconds": 667.913,
+      "text": "Two preparations give identical vertical-spin\nprobabilities.",
+      "start_frame": 19933,
+      "end_frame": 20038
+    },
+    {
+      "id": 171,
+      "start_seconds": 668.613,
+      "end_seconds": 670.793,
+      "text": "Must all their measurement predictions be\nidentical?",
+      "start_frame": 20058,
+      "end_frame": 20124
+    },
+    {
+      "id": 172,
+      "start_seconds": 671.533,
+      "end_seconds": 676.473,
+      "text": "Choose yes, no because relative phase may\ndiffer, or yes because normalization fixes",
+      "start_frame": 20145,
+      "end_frame": 20295
+    },
+    {
+      "id": 173,
+      "start_seconds": 676.473,
+      "end_seconds": 677.033,
+      "text": "the phase.",
+      "start_frame": 20294,
+      "end_frame": 20311
+    },
+    {
+      "id": 174,
+      "start_seconds": 677.693,
+      "end_seconds": 680.373,
+      "text": "Propose an additional measurement that could\ndistinguish the preparations.",
+      "start_frame": 20330,
+      "end_frame": 20412
+    },
+    {
+      "id": 175,
+      "start_seconds": 681.033,
+      "end_seconds": 685.693,
+      "text": "A good answer states what the available\nevidence does and does not determine.",
+      "start_frame": 20430,
+      "end_frame": 20571
+    },
+    {
+      "id": 176,
+      "start_seconds": 692.787,
+      "end_seconds": 695.167,
+      "text": "Relative phase can distinguish those\npreparations.",
+      "start_frame": 20783,
+      "end_frame": 20856
+    },
+    {
+      "id": 177,
+      "start_seconds": 696.047,
+      "end_seconds": 700.507,
+      "text": "Open the browser Python lab, vary the state\nand measurement axis, and test your",
+      "start_frame": 20881,
+      "end_frame": 21016
+    },
+    {
+      "id": 178,
+      "start_seconds": 700.507,
+      "end_seconds": 701.987,
+      "text": "predictions before running the code.",
+      "start_frame": 21015,
+      "end_frame": 21060
+    },
+    {
+      "id": 179,
+      "start_seconds": 702.627,
+      "end_seconds": 706.147,
+      "text": "Then tackle an unfamiliar three-level\nmeasurement with a degenerate outcome.",
+      "start_frame": 21078,
+      "end_frame": 21185
+    },
+    {
+      "id": 180,
+      "start_seconds": 706.677,
+      "end_seconds": 710.957,
+      "text": "Decide which coherence an ideal measurement\npreserves, compare independent",
+      "start_frame": 21200,
+      "end_frame": 21329
+    },
+    {
+      "id": 181,
+      "start_seconds": 710.957,
+      "end_seconds": 713.337,
+      "text": "calculations, and defend the assumptions.",
+      "start_frame": 21328,
+      "end_frame": 21401
+    },
+    {
+      "id": 182,
+      "start_seconds": 714.097,
+      "end_seconds": 718.537,
+      "text": "The postulates become useful when you can\nexplain a new experiment, not merely repeat",
+      "start_frame": 21422,
+      "end_frame": 21557
+    },
+    {
+      "id": 183,
+      "start_seconds": 718.537,
+      "end_seconds": 719.037,
+      "text": "their names.",
+      "start_frame": 21556,
+      "end_frame": 21572
+    }
+  ],
+  "chapters": [
+    {
+      "index": 0,
+      "title": "States and bases",
+      "start_frame": 0,
+      "start_seconds": 0.0,
+      "animation_frames": 120
+    },
+    {
+      "index": 1,
+      "title": "Observables and outcomes",
+      "start_frame": 3101,
+      "start_seconds": 103.36666666666666,
+      "animation_frames": 90
+    },
+    {
+      "index": 2,
+      "title": "Born rule and state update",
+      "start_frame": 6135,
+      "start_seconds": 204.5,
+      "animation_frames": 90
+    },
+    {
+      "index": 3,
+      "title": "Expectation is an ensemble",
+      "start_frame": 9046,
+      "start_seconds": 301.53333333333336,
+      "animation_frames": 90
+    },
+    {
+      "index": 4,
+      "title": "Order and compatibility",
+      "start_frame": 12083,
+      "start_seconds": 402.76666666666665,
+      "animation_frames": 114
+    },
+    {
+      "index": 5,
+      "title": "Quantum time evolution",
+      "start_frame": 15169,
+      "start_seconds": 505.6333333333333,
+      "animation_frames": 135
+    },
+    {
+      "index": 6,
+      "title": "From postulates to an investigation",
+      "start_frame": 18297,
+      "start_seconds": 609.9,
+      "animation_frames": 90
+    }
+  ],
+  "summary": [
+    [
+      "A basis change alters coordinates while preserving the physical preparation.",
+      "Every change in state-vector coordinates is a new preparation."
+    ],
+    [
+      "Projective measurement outcomes are eigenvalues; probabilities use squared projection norms.",
+      "Probability amplitudes themselves are always nonnegative probabilities."
+    ],
+    [
+      "A recorded result requires a conditional state update before the next prediction.",
+      "Always reuse the original preparation after a recorded measurement."
+    ],
+    [
+      "A relative phase can change some observables even when z probabilities stay fixed.",
+      "If z probabilities are fixed, the quantum state cannot evolve."
+    ],
+    [
+      "A state inference needs sufficient measurements, uncertainty and explicit model assumptions.",
+      "A single measurement basis always determines the entire quantum state."
+    ]
+  ],
+  "physics": {
+    "default_state": [
+      [
+        0.7745966692414834,
+        0.0
+      ],
+      [
+        0.316227766016838,
+        0.5477225575051661
+      ]
+    ],
+    "bloch": [
+      0.4898979485566357,
+      0.848528137423857,
+      0.20000000000000007
+    ],
+    "p_z_plus": 0.6000000000000001,
+    "p_x_plus": 0.7449489742783179,
+    "p_y_plus": 0.9242640687119286,
+    "spin_z_over_hbar": 0.10000000000000003,
+    "sequential_z_x_z_plus": 0.4999999999999998,
+    "pi_rotation_x_plus": -1.1102230246251565e-16
+  },
+  "narration_words": 1559
+}

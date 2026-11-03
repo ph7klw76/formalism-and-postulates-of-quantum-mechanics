@@ -1,0 +1,1038 @@
+[
+  {
+    "index": 0,
+    "chapter": 0,
+    "title": "A state is a prediction engine",
+    "focus": "What can a spin experiment tell us?",
+    "text": "Imagine preparing many identical spin one-half systems. Measuring along the vertical axis gives sixty percent plus outcomes. Have you completely identified the quantum state? Surprisingly, no. To understand why, we need the formalism: states, operators, probabilities, measurement updates, and time evolution. Our small two-level laboratory will turn those postulates into predictions you can test.",
+    "kind": "explain",
+    "duration": 25.133333333333333,
+    "start": 0,
+    "speech_end": 24.55,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 11.0,
+        "text": "Imagine preparing many identical spin one-half systems. Measuring along the vertical axis gives sixty percent plus outcomes. Have you completely identified the quantum state? Surprisingly, no.",
+        "asr": "Imagine preparing many identical spin one half systems. Measuring along the vertical axis gives 60% plus outcomes.  Have you completely identified the quantum state?  Surprisingly, no.",
+        "wer": 0.0,
+        "exact_word_anchors": 26,
+        "caption_words": 26,
+        "file": "narration\\neural\\00_00_ceca9cc3298a79d0b4ddbb4e.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 11.440000000000001,
+        "duration": 13.11,
+        "text": "To understand why, we need the formalism: states, operators, probabilities, measurement updates, and time evolution. Our small two-level laboratory will turn those postulates into predictions you can test.",
+        "asr": "To understand why, we need the formalism, states, operators, probabilities, measurement updates,  and time evolution. Our small two-level laboratory will turn those postulates into predictions  you can test.",
+        "wer": 0.0,
+        "exact_word_anchors": 28,
+        "caption_words": 28,
+        "file": "narration\\neural\\00_01_ce64143c692fe91a7b973dd8.wav"
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "chapter": 0,
+    "title": "One state, many representations",
+    "focus": "A complex vector is not a physical arrow",
+    "text": "A pure state is represented by a normalized ket in a complex Hilbert space. A bra is its conjugate transpose, so the inner product includes complex conjugation. In an orthonormal two-state basis, the coefficients are probability amplitudes. Their squared magnitudes sum to one. Changing basis changes the coordinates, not the preparation. A common overall phase also leaves every measurement probability unchanged.",
+    "kind": "explain",
+    "duration": 27.0,
+    "start": 25.133333333333333,
+    "speech_end": 51.523333333333326,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 17.52,
+        "text": "A pure state is represented by a normalized ket in a complex Hilbert space. A bra is its conjugate transpose, so the inner product includes complex conjugation. In an orthonormal two-state basis, the coefficients are probability amplitudes. Their squared magnitudes sum to one.",
+        "asr": "A pure state is represented by a normalized ket in a complex Hilbert space. A bra is its  conjugate transpose, so the inner product includes complex conjugation. In an orthonormal two-state  basis, the coefficients are probability amplitudes. They're squared magnitudes sum to 1.",
+        "wer": 0.045454545454545456,
+        "exact_word_anchors": 42,
+        "caption_words": 43,
+        "file": "narration\\neural\\01_00_da23f0ee6e5d0d9a3bf2d30d.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 17.959999999999997,
+        "duration": 8.43,
+        "text": "Changing basis changes the coordinates, not the preparation. A common overall phase also leaves every measurement probability unchanged.",
+        "asr": "Changing basis changes the coordinates, not the preparation. A common overall phase also leaves every measurement probability unchanged.",
+        "wer": 0.0,
+        "exact_word_anchors": 18,
+        "caption_words": 18,
+        "file": "narration\\neural\\01_01_78587fda86eaead437d91797.wav"
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "chapter": 0,
+    "title": "Predict: how many dimensions?",
+    "focus": "Three measurement axes; how many independent basis states?",
+    "text": "Pause and predict. Spin can be measured along three spatial axes. Does that make its spin Hilbert space three-dimensional? Choose between two dimensions, three dimensions, and infinitely many dimensions. Distinguish the number of possible apparatus orientations from the number of independent states needed to describe this degree of freedom.",
+    "kind": "predict",
+    "duration": 26.7,
+    "start": 52.13333333333333,
+    "speech_end": 72.32333333333332,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 12.41,
+        "text": "Pause and predict. Spin can be measured along three spatial axes. Does that make its spin Hilbert space three-dimensional? Choose between two dimensions, three dimensions, and infinitely many dimensions.",
+        "asr": "Pause and predict. Spin can be measured along three spatial axes. Does that make it spin Hilbert space  three-dimensional? Choose between two dimensions, three dimensions, and infinitely many dimensions.",
+        "wer": 0.03333333333333333,
+        "exact_word_anchors": 28,
+        "caption_words": 29,
+        "file": "narration\\neural\\02_00_ad303fa2929ec50089ea0260.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 12.850000000000001,
+        "duration": 7.34,
+        "text": "Distinguish the number of possible apparatus orientations from the number of independent states needed to describe this degree of freedom.",
+        "asr": "Distinguish the number of possible apparatus orientations from the number of independent states needed to describe this degree of freedom.",
+        "wer": 0.0,
+        "exact_word_anchors": 20,
+        "caption_words": 20,
+        "file": "narration\\neural\\02_01_71c0e8a46b72a0e52c6fb72f.wav"
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "chapter": 0,
+    "title": "Dimension counts independent states",
+    "focus": "Spin-only Hilbert space: complex dimension two",
+    "text": "For spin one-half alone, the answer is two. The plus and minus vertical-spin states form a complete basis. Measurements along other directions use different bases in that same space. Position and other degrees of freedom require additional structure; we have deliberately excluded them. The Bloch arrow summarizes a two-level state. It is not a tiny spinning ball or a particle trajectory.",
+    "kind": "reveal",
+    "duration": 24.533333333333335,
+    "start": 78.83333333333333,
+    "speech_end": 102.78333333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.62,
+        "text": "For spin one-half alone, the answer is two. The plus and minus vertical-spin states form a complete basis. Measurements along other directions use different bases in that same space. Position and other degrees of freedom require additional structure; we have deliberately excluded them.",
+        "asr": "For spin 1 half alone, the answer is 2. The plus and minus vertical spin states form a complete basis.  Measurements along other directions use different bases in that same space.  Position and other degrees of freedom require additional structure. We have deliberately excluded them.",
+        "wer": 0.0,
+        "exact_word_anchors": 43,
+        "caption_words": 43,
+        "file": "narration\\neural\\03_00_bc031fa4cfa6692591af7291.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 17.06,
+        "duration": 6.89,
+        "text": "The Bloch arrow summarizes a two-level state. It is not a tiny spinning ball or a particle trajectory.",
+        "asr": "The block arrow summarizes a two-level state. It is not a tiny spinning ball or a particle trajectory.",
+        "wer": 0.05263157894736842,
+        "exact_word_anchors": 17,
+        "caption_words": 18,
+        "file": "narration\\neural\\03_01_c37ffb5a88d32fb59054dc95.wav"
+      }
+    ]
+  },
+  {
+    "index": 4,
+    "chapter": 1,
+    "title": "An observable is an operator",
+    "focus": "Physical outcomes come from the spectrum",
+    "text": "An observable is represented here by a Hermitian operator. Its eigenvalues are possible results of an ideal projective measurement. Its eigenvectors, or more generally its eigenspaces, describe states with definite values. Hermiticity gives real eigenvalues. Completeness of the orthogonal spectral projectors guarantees that the probabilities for all mutually exclusive outcomes add to one.",
+    "kind": "explain",
+    "duration": 26.933333333333334,
+    "start": 103.36666666666666,
+    "speech_end": 129.68666666666667,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 18.11,
+        "text": "An observable is represented here by a Hermitian operator. Its eigenvalues are possible results of an ideal projective measurement. Its eigenvectors, or more generally its eigenspaces, describe states with definite values. Hermiticity gives real eigenvalues.",
+        "asr": "An observable is represented here by a Hermitian operator. Its eigenvalues are possible results  of an ideal projective measurement. Its eigenvectors, or more generally its eigenspaces, describe  states with definite values. Hermiticity gives real eigenvalues.",
+        "wer": 0.0,
+        "exact_word_anchors": 35,
+        "caption_words": 35,
+        "file": "narration\\neural\\04_00_f20d582f40a2326a7e75bf5b.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 18.549999999999997,
+        "duration": 7.77,
+        "text": "Completeness of the orthogonal spectral projectors guarantees that the probabilities for all mutually exclusive outcomes add to one.",
+        "asr": "Completeness of the orthogonal spectral projectors guarantees that the probabilities for all mutually exclusive outcomes add to one.",
+        "wer": 0.0,
+        "exact_word_anchors": 18,
+        "caption_words": 18,
+        "file": "narration\\neural\\04_01_ec3d8fc0694355e3036cd0ea.wav"
+      }
+    ]
+  },
+  {
+    "index": 5,
+    "chapter": 1,
+    "title": "The spin scale matters",
+    "focus": "Pauli outcomes are dimensionless; spin has units",
+    "text": "The Pauli z matrix has eigenvalues plus one and minus one. Physical z spin is h-bar divided by two times that matrix, so the measured angular momenta are plus or minus h-bar over two. H-bar is Planck's constant divided by two pi. Never silently exchange a dimensionless Pauli expectation with a physical spin value.",
+    "kind": "explain",
+    "duration": 23.233333333333334,
+    "start": 130.29999999999998,
+    "speech_end": 152.93999999999997,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.13,
+        "text": "The Pauli z matrix has eigenvalues plus one and minus one. Physical z spin is h-bar divided by two times that matrix, so the measured angular momenta are plus or minus h-bar over two. H-bar is Planck's constant divided by two pi.",
+        "asr": "The Pauli Z matrix has eigenvalues plus one and minus one. Physical Z spin is H bar divided  by two times that matrix. So the measured angular momenta are plus or minus H bar over two. H  bar is Planck's constant divided by two pi.",
+        "wer": 0.0,
+        "exact_word_anchors": 42,
+        "caption_words": 42,
+        "file": "narration\\neural\\05_00_62d265b94473fdc591094ba3.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.569999999999997,
+        "duration": 6.07,
+        "text": "Never silently exchange a dimensionless Pauli expectation with a physical spin value.",
+        "asr": "Never silently exchange a dimensionless Pauli expectation with a physical spin value.",
+        "wer": 0.0,
+        "exact_word_anchors": 12,
+        "caption_words": 12,
+        "file": "narration\\neural\\05_01_8e1cc0c011fba8b40e1ccf69.wav"
+      }
+    ]
+  },
+  {
+    "index": 6,
+    "chapter": 1,
+    "title": "Predict: a single outcome",
+    "focus": "Prepare horizontal plus; measure vertical spin",
+    "text": "Prepare the horizontal plus state and measure vertical spin once. Can the detector report zero because the average vertical spin is zero? Predict: zero every time, either plus or minus h-bar over two, or any value between those extremes. Give a reason based on the observable, not on a classical picture of an arrow.",
+    "kind": "predict",
+    "duration": 25.4,
+    "start": 153.5333333333333,
+    "speech_end": 172.4133333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 14.19,
+        "text": "Prepare the horizontal plus state and measure vertical spin once. Can the detector report zero because the average vertical spin is zero? Predict: zero every time, either plus or minus h-bar over two, or any value between those extremes.",
+        "asr": "Prepare the horizontal plus state and measure vertical spin once. Can the detector report  zero because the average vertical spin is zero? Predict zero every time, either plus or minus  H bar over two, or any value between those extremes.",
+        "wer": 0.0,
+        "exact_word_anchors": 39,
+        "caption_words": 39,
+        "file": "narration\\neural\\06_00_e34c964489a510116834c2e6.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 14.63,
+        "duration": 4.25,
+        "text": "Give a reason based on the observable, not on a classical picture of an arrow.",
+        "asr": "Give a reason based on the observable, not on a classical picture of an arrow.",
+        "wer": 0.0,
+        "exact_word_anchors": 15,
+        "caption_words": 15,
+        "file": "narration\\neural\\06_01_953b2b9a6a563ba3c2844601.wav"
+      }
+    ]
+  },
+  {
+    "index": 7,
+    "chapter": 1,
+    "title": "An average is not an allowed click",
+    "focus": "Eigenvalues constrain single-shot outcomes",
+    "text": "The detector reports one of the two eigenvalues, each with probability one half in this preparation. Zero is the expectation value, not a possible single-shot result. Writing an operator in its spectral form, as eigenvalue times projector summed over outcomes, makes this distinction explicit. Degenerate eigenvalues correspond to whole eigenspaces rather than a uniquely selected eigenvector.",
+    "kind": "reveal",
+    "duration": 25.566666666666666,
+    "start": 178.9333333333333,
+    "speech_end": 203.9133333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 10.37,
+        "text": "The detector reports one of the two eigenvalues, each with probability one half in this preparation. Zero is the expectation value, not a possible single-shot result.",
+        "asr": "The detector reports one of the two eigenvalues, each with probability one-half in this preparation.  Zero is the expectation value, not a possible single-shot result.",
+        "wer": 0.0,
+        "exact_word_anchors": 26,
+        "caption_words": 26,
+        "file": "narration\\neural\\07_00_a14941a58f2fe206e2003003.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 10.81,
+        "duration": 14.17,
+        "text": "Writing an operator in its spectral form, as eigenvalue times projector summed over outcomes, makes this distinction explicit. Degenerate eigenvalues correspond to whole eigenspaces rather than a uniquely selected eigenvector.",
+        "asr": "Writing an operator in its spectral form, as eigenvalue times projector summed over outcomes,  makes this distinction explicit. Degenerate eigenvalues correspond to whole eigenspaces  rather than a uniquely selected eigenvector.",
+        "wer": 0.0,
+        "exact_word_anchors": 30,
+        "caption_words": 30,
+        "file": "narration\\neural\\07_01_cf943536ec649bcee90ee321.wav"
+      }
+    ]
+  },
+  {
+    "index": 8,
+    "chapter": 2,
+    "title": "The Born rule turns amplitudes into chances",
+    "focus": "Project onto an eigenspace; take the squared norm",
+    "text": "For an ideal measurement, the probability of an outcome is the squared length of the state projected into its eigenspace. For a nondegenerate outcome, this is the squared magnitude of the inner product with its eigenket. Amplitudes can be complex or negative. Probabilities cannot. Taking a coefficient directly as a probability can give an impossible answer.",
+    "kind": "explain",
+    "duration": 22.233333333333334,
+    "start": 204.49999999999997,
+    "speech_end": 226.12999999999997,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.35,
+        "text": "For an ideal measurement, the probability of an outcome is the squared length of the state projected into its eigenspace. For a nondegenerate outcome, this is the squared magnitude of the inner product with its eigenket. Amplitudes can be complex or negative. Probabilities cannot.",
+        "asr": "For an ideal measurement, the probability of an outcome is the squared length of the state  projected into its eigenspace. For a non-degenerate outcome, this is the squared magnitude of the  inner product with its eigenket. Amplitudes can be complex or negative. Probabilities  cannot.",
+        "wer": 0.045454545454545456,
+        "exact_word_anchors": 43,
+        "caption_words": 44,
+        "file": "narration\\neural\\08_00_d13957ab205c30092bb6dcba.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.79,
+        "duration": 4.84,
+        "text": "Taking a coefficient directly as a probability can give an impossible answer.",
+        "asr": "Taking a coefficient directly as a probability can give an impossible answer.",
+        "wer": 0.0,
+        "exact_word_anchors": 12,
+        "caption_words": 12,
+        "file": "narration\\neural\\08_01_9a9207afee95a7bd8ad582bd.wav"
+      }
+    ]
+  },
+  {
+    "index": 9,
+    "chapter": 2,
+    "title": "Condition on the recorded outcome",
+    "focus": "Projection, followed by normalization",
+    "text": "Our example has vertical plus probability zero point six and vertical minus probability zero point four. Its relative phase does not appear in those two numbers, but it matters in other bases. If an outcome is recorded, the conditional post-measurement state is the projected ket divided by its norm. An impossible outcome has no conditional state; division by zero is not physics.",
+    "kind": "explain",
+    "duration": 22.6,
+    "start": 226.7333333333333,
+    "speech_end": 248.74333333333328,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 10.7,
+        "text": "Our example has vertical plus probability zero point six and vertical minus probability zero point four. Its relative phase does not appear in those two numbers, but it matters in other bases.",
+        "asr": "Our example has vertical plus probability 0.6 and vertical minus probability 0.4.  Its relative phase does not appear in those two numbers, but it matters in other bases.",
+        "wer": 0.0,
+        "exact_word_anchors": 30,
+        "caption_words": 32,
+        "file": "narration\\neural\\09_00_b6b6afa7caba671fc61ec511.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 11.14,
+        "duration": 10.87,
+        "text": "If an outcome is recorded, the conditional post-measurement state is the projected ket divided by its norm. An impossible outcome has no conditional state; division by zero is not physics.",
+        "asr": "If an outcome is recorded, the conditional post measurement state is the projected ket divided  by its norm. An impossible outcome has no conditional state. Division by zero is not physics.",
+        "wer": 0.0,
+        "exact_word_anchors": 30,
+        "caption_words": 30,
+        "file": "narration\\neural\\09_01_872d56f70b80f791e1a871a3.wav"
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "chapter": 2,
+    "title": "Predict: after horizontal plus",
+    "focus": "What will a second, vertical measurement do?",
+    "text": "Suppose the first measurement records horizontal plus. Immediately measure vertical spin, with no intervening evolution. Is the probability of vertical plus still zero point six, now one half, or now one? Predict using the state after the first recorded result. Reusing the original preparation is a common but consequential mistake.",
+    "kind": "predict",
+    "duration": 26.266666666666666,
+    "start": 249.3333333333333,
+    "speech_end": 269.08333333333326,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 15.09,
+        "text": "Suppose the first measurement records horizontal plus. Immediately measure vertical spin, with no intervening evolution. Is the probability of vertical plus still zero point six, now one half, or now one? Predict using the state after the first recorded result.",
+        "asr": "Suppose the first measurement records horizontal plus immediately measure vertical spin with no intervening evolution.  Is the probability of vertical plus still 0.6, now one-half, or now one?  Predict using the state after the first recorded result.",
+        "wer": 0.0,
+        "exact_word_anchors": 39,
+        "caption_words": 40,
+        "file": "narration\\neural\\10_00_0504173fc1f220853e7cdd1f.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 15.530000000000001,
+        "duration": 4.22,
+        "text": "Reusing the original preparation is a common but consequential mistake.",
+        "asr": "Reusing the original preparation is a common but consequential mistake.",
+        "wer": 0.0,
+        "exact_word_anchors": 10,
+        "caption_words": 10,
+        "file": "narration\\neural\\10_01_66104e25864bc41c845792cc.wav"
+      }
+    ]
+  },
+  {
+    "index": 11,
+    "chapter": 2,
+    "title": "The preparation has changed",
+    "focus": "Use the conditional state for the next prediction",
+    "text": "The probability is one half. Conditional on horizontal plus, the state is the horizontal plus eigenstate, regardless of the original amplitudes. If we repeat the same horizontal measurement immediately, its recorded value repeats with certainty in this ideal model. If we discard an intermediate outcome instead, we must average over its possible post-measurement states, rather than pretending nothing happened.",
+    "kind": "reveal",
+    "duration": 25.933333333333334,
+    "start": 275.59999999999997,
+    "speech_end": 300.92999999999995,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.31,
+        "text": "The probability is one half. Conditional on horizontal plus, the state is the horizontal plus eigenstate, regardless of the original amplitudes. If we repeat the same horizontal measurement immediately, its recorded value repeats with certainty in this ideal model.",
+        "asr": "The probability is one half. Conditional on horizontal plus, the state is the horizontal  plus eigenstate, regardless of the original amplitudes. If we repeat the same horizontal  measurement immediately, its recorded value repeats with certainty in this ideal model.",
+        "wer": 0.0,
+        "exact_word_anchors": 39,
+        "caption_words": 39,
+        "file": "narration\\neural\\11_00_12c7140c298b538381d77853.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.749999999999996,
+        "duration": 8.58,
+        "text": "If we discard an intermediate outcome instead, we must average over its possible post-measurement states, rather than pretending nothing happened.",
+        "asr": "If we discard an intermediate outcome instead, we must average over its possible post-measurement states, rather than pretending nothing happened.",
+        "wer": 0.0,
+        "exact_word_anchors": 20,
+        "caption_words": 20,
+        "file": "narration\\neural\\11_01_f1c1cd5077d607b906aa5715.wav"
+      }
+    ]
+  },
+  {
+    "index": 12,
+    "chapter": 3,
+    "title": "Expectation means a weighted ensemble",
+    "focus": "The average can lie between allowed outcomes",
+    "text": "An expectation value combines the possible outcomes with their Born probabilities. For our vertical measurement, sixty percent plus h-bar over two and forty percent minus h-bar over two give an average of zero point one h-bar. That average describes many identically prepared systems. It does not mean that each system contains a little fraction of each detector result.",
+    "kind": "explain",
+    "duration": 23.5,
+    "start": 301.5333333333333,
+    "speech_end": 324.44333333333327,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 17.86,
+        "text": "An expectation value combines the possible outcomes with their Born probabilities. For our vertical measurement, sixty percent plus h-bar over two and forty percent minus h-bar over two give an average of zero point one h-bar. That average describes many identically prepared systems.",
+        "asr": "An expectation value combines the possible outcomes with their born probabilities. For our vertical  measurement, 60% plus h bar over 2 and 40% minus h bar over 2 give an average of 0.1 h bar.  That average describes many identically prepared systems.",
+        "wer": 0.0,
+        "exact_word_anchors": 42,
+        "caption_words": 43,
+        "file": "narration\\neural\\12_00_903cfbd792116c1973014c9e.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 18.299999999999997,
+        "duration": 4.61,
+        "text": "It does not mean that each system contains a little fraction of each detector result.",
+        "asr": "It does not mean that each system contains a little fraction of each detector result.",
+        "wer": 0.0,
+        "exact_word_anchors": 15,
+        "caption_words": 15,
+        "file": "narration\\neural\\12_01_1347cf9ec612720a3bd79bfb.wav"
+      }
+    ]
+  },
+  {
+    "index": 13,
+    "chapter": 3,
+    "title": "Compute the prediction two ways",
+    "focus": "Matrix product agrees with the spectral sum",
+    "text": "Compute the expectation as bra, operator, ket. Then independently compute the probability-weighted eigenvalue sum. They must agree. For one thousand independent preparations, the expected number of vertical plus outcomes is six hundred, with a binomial standard deviation of about fifteen point five. A simulated histogram illustrates sampling fluctuations; it is not a claim of measured laboratory data.",
+    "kind": "explain",
+    "duration": 26.333333333333332,
+    "start": 325.0333333333333,
+    "speech_end": 350.7833333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 9.07,
+        "text": "Compute the expectation as bra, operator, ket. Then independently compute the probability-weighted eigenvalue sum. They must agree.",
+        "asr": "Compute the expectation as bra, operator, ket. Then independently compute the probability weighted eigenvalue sum. They must agree.",
+        "wer": 0.0,
+        "exact_word_anchors": 17,
+        "caption_words": 17,
+        "file": "narration\\neural\\13_00_5068bd372888ce6fec5c9059.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 9.510000000000002,
+        "duration": 16.24,
+        "text": "For one thousand independent preparations, the expected number of vertical plus outcomes is six hundred, with a binomial standard deviation of about fifteen point five. A simulated histogram illustrates sampling fluctuations; it is not a claim of measured laboratory data.",
+        "asr": "For 1000 independent preparations, the expected number of vertical plus outcomes is 600, with  a binomial standard deviation of about 15.5. A simulated histogram illustrates sampling fluctuations.  It is not a claim of measured laboratory data.",
+        "wer": 0.0,
+        "exact_word_anchors": 39,
+        "caption_words": 40,
+        "file": "narration\\neural\\13_01_24c05e0704d7fedf2a9634bc.wav"
+      }
+    ]
+  },
+  {
+    "index": 14,
+    "chapter": 3,
+    "title": "Predict: what does the mean guarantee?",
+    "focus": "Separate expectation from an individual outcome",
+    "text": "The predicted mean vertical spin is zero point one h-bar. Which statement follows? Every individual detector result equals that mean, the mean is approached statistically across many preparations, or exactly six hundred of every thousand results must be plus? Choose the statement that respects both the operator spectrum and random sampling.",
+    "kind": "predict",
+    "duration": 26.666666666666668,
+    "start": 351.3666666666666,
+    "speech_end": 371.5066666666666,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 15.17,
+        "text": "The predicted mean vertical spin is zero point one h-bar. Which statement follows? Every individual detector result equals that mean, the mean is approached statistically across many preparations, or exactly six hundred of every thousand results must be plus?",
+        "asr": "The predicted mean vertical spin is 0.1 h bar. Which statement follows? Every individual detector  result equals that mean. The mean is approached statistically across many preparations. Or  exactly 600 of every thousand results must be plus.",
+        "wer": 0.0,
+        "exact_word_anchors": 38,
+        "caption_words": 39,
+        "file": "narration\\neural\\14_00_de2ef1bf3169d88b7f6b3b1e.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 15.610000000000001,
+        "duration": 4.53,
+        "text": "Choose the statement that respects both the operator spectrum and random sampling.",
+        "asr": "Choose the statement that respects both the operator spectrum and random sampling.",
+        "wer": 0.0,
+        "exact_word_anchors": 12,
+        "caption_words": 12,
+        "file": "narration\\neural\\14_01_0ebc0231ba24482755f76665.wav"
+      }
+    ]
+  },
+  {
+    "index": 15,
+    "chapter": 3,
+    "title": "Uncertainty is part of the prediction",
+    "focus": "Finite samples fluctuate around the theoretical mean",
+    "text": "The second statement is correct. The expectation is a probability-weighted theoretical mean; a finite sample fluctuates. Increasing the number of independent trials narrows the uncertainty of the estimated mean, but does not create new single-shot eigenvalues. In your notebook, change the sample size and seed, report uncertainty, and compare the observed deviation with the binomial prediction.",
+    "kind": "reveal",
+    "duration": 24.733333333333334,
+    "start": 378.0333333333333,
+    "speech_end": 402.1533333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 15.73,
+        "text": "The second statement is correct. The expectation is a probability-weighted theoretical mean; a finite sample fluctuates. Increasing the number of independent trials narrows the uncertainty of the estimated mean, but does not create new single-shot eigenvalues.",
+        "asr": "The second statement is correct. The expectation is a probability-weighted theoretical mean.  A finite sample fluctuates. Increasing the number of independent trials narrows the uncertainty  of the estimated mean, but does not create new single-shot eigenvalues.",
+        "wer": 0.0,
+        "exact_word_anchors": 36,
+        "caption_words": 36,
+        "file": "narration\\neural\\15_00_0c600b72b3f4a91c3be70031.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.17,
+        "duration": 7.95,
+        "text": "In your notebook, change the sample size and seed, report uncertainty, and compare the observed deviation with the binomial prediction.",
+        "asr": "In your notebook, change the sample size and seed, report uncertainty, and compare the observed deviation with the binomial prediction.",
+        "wer": 0.0,
+        "exact_word_anchors": 20,
+        "caption_words": 20,
+        "file": "narration\\neural\\15_01_42205939a2f80acf2efa42f0.wav"
+      }
+    ]
+  },
+  {
+    "index": 16,
+    "chapter": 4,
+    "title": "Order can change the experiment",
+    "focus": "An ignored measurement can still change later statistics",
+    "text": "Prepare vertical plus. An immediate vertical measurement gives plus with certainty. Now insert a horizontal measurement and ignore its result. The resulting ensemble is an equal mixture of horizontal plus and horizontal minus. A later vertical measurement gives plus only half the time. Ignoring the record is not the same operation as omitting the apparatus.",
+    "kind": "explain",
+    "duration": 21.766666666666666,
+    "start": 402.76666666666665,
+    "speech_end": 423.93666666666667,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.41,
+        "text": "Prepare vertical plus. An immediate vertical measurement gives plus with certainty. Now insert a horizontal measurement and ignore its result. The resulting ensemble is an equal mixture of horizontal plus and horizontal minus. A later vertical measurement gives plus only half the time.",
+        "asr": "Prepare vertical plus. An immediate vertical measurement gives plus with certainty. Now insert  a horizontal measurement and ignore its result. The resulting ensemble is an equal mixture of  horizontal plus and horizontal minus. A later vertical measurement gives plus only half the time.",
+        "wer": 0.0,
+        "exact_word_anchors": 43,
+        "caption_words": 43,
+        "file": "narration\\neural\\16_00_ad9852d6aa89ce17ed60b37a.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.849999999999998,
+        "duration": 4.32,
+        "text": "Ignoring the record is not the same operation as omitting the apparatus.",
+        "asr": "Ignoring the record is not the same operation as omitting the apparatus.",
+        "wer": 0.0,
+        "exact_word_anchors": 12,
+        "caption_words": 12,
+        "file": "narration\\neural\\16_01_566bdb42861f93e443f9df18.wav"
+      }
+    ]
+  },
+  {
+    "index": 17,
+    "chapter": 4,
+    "title": "Compatibility is an operator statement",
+    "focus": "Commuting observables admit a common eigenbasis",
+    "text": "For finite-dimensional Hermitian observables, commuting operators can be simultaneously diagonalized. Horizontal and vertical spin do not commute. Their ideal measurement order can therefore matter. But a zero expectation of their commutator in one specially chosen state does not make the commutator operator zero. Compatibility concerns the operators, not just one number calculated in one preparation.",
+    "kind": "explain",
+    "duration": 26.96666666666667,
+    "start": 424.5333333333333,
+    "speech_end": 450.9133333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 12.76,
+        "text": "For finite-dimensional Hermitian observables, commuting operators can be simultaneously diagonalized. Horizontal and vertical spin do not commute. Their ideal measurement order can therefore matter.",
+        "asr": "For finite-dimensional, Hermitian observables, commuting operators can be simultaneously diagonalized.  Horizontal and vertical spin do not commute. Their ideal measurement order can therefore matter.",
+        "wer": 0.0,
+        "exact_word_anchors": 24,
+        "caption_words": 24,
+        "file": "narration\\neural\\17_00_f29ffc17de87108ecf652b16.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 13.200000000000001,
+        "duration": 13.18,
+        "text": "But a zero expectation of their commutator in one specially chosen state does not make the commutator operator zero. Compatibility concerns the operators, not just one number calculated in one preparation.",
+        "asr": "But a zero expectation of their commutator in one specially chosen state does not make the commutator operator zero.  Compatibility concerns the operators, not just one number calculated in one preparation.",
+        "wer": 0.0,
+        "exact_word_anchors": 31,
+        "caption_words": 31,
+        "file": "narration\\neural\\17_01_361484b26266b55e1e1c1612.wav"
+      }
+    ]
+  },
+  {
+    "index": 18,
+    "chapter": 4,
+    "title": "Predict: insert the horizontal measurement",
+    "focus": "Prepare vertical plus, measure horizontal, then vertical",
+    "text": "Return to vertical plus preparation. Insert the horizontal measurement, discard its result, and then measure vertical spin. Is vertical plus certain, impossible, or obtained with probability one half? Use the complete experimental sequence, including the disturbance associated with the intermediate measurement. State which idealizations your prediction assumes.",
+    "kind": "predict",
+    "duration": 28.366666666666667,
+    "start": 451.5,
+    "speech_end": 473.34,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 12.28,
+        "text": "Return to vertical plus preparation. Insert the horizontal measurement, discard its result, and then measure vertical spin. Is vertical plus certain, impossible, or obtained with probability one half?",
+        "asr": "Return to vertical plus preparation. Insert the horizontal measurement, discard its result,  and then measure vertical spin. Is vertical plus certain,  impossible, or obtained with probability one-half?",
+        "wer": 0.0,
+        "exact_word_anchors": 28,
+        "caption_words": 28,
+        "file": "narration\\neural\\18_00_36eeb6fbb3d30f1b22733d80.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 12.72,
+        "duration": 9.12,
+        "text": "Use the complete experimental sequence, including the disturbance associated with the intermediate measurement. State which idealizations your prediction assumes.",
+        "asr": "Use the complete experimental sequence, including the disturbance associated with the intermediate measurement.  State which idealizations your prediction assumes.",
+        "wer": 0.0,
+        "exact_word_anchors": 19,
+        "caption_words": 19,
+        "file": "narration\\neural\\18_01_d94689103697045316cce17b.wav"
+      }
+    ]
+  },
+  {
+    "index": 19,
+    "chapter": 4,
+    "title": "Track the full sequence",
+    "focus": "Conditioned branches and discarded outcomes differ",
+    "text": "The answer is one half. You can calculate each conditioned branch and then average, or use the density matrix after the unrecorded measurement. Those independent routes agree. Our assumptions are ideal projective measurements and no evolution between them. A real apparatus may have additional errors or dynamics. Testing this model requires checking those conditions rather than treating every discrepancy as a new postulate.",
+    "kind": "reveal",
+    "duration": 25.766666666666666,
+    "start": 479.8666666666667,
+    "speech_end": 505.0466666666667,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 15.08,
+        "text": "The answer is one half. You can calculate each conditioned branch and then average, or use the density matrix after the unrecorded measurement. Those independent routes agree. Our assumptions are ideal projective measurements and no evolution between them.",
+        "asr": "The answer is one half. You can calculate each conditioned branch and then average or use the density matrix after the unrecorded measurement. Those independent routes agree. Our assumptions are ideal projective measurements and no evolution between them.",
+        "wer": 0.0,
+        "exact_word_anchors": 38,
+        "caption_words": 38,
+        "file": "narration\\neural\\19_00_f016251b963774e93ff56203.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 15.520000000000001,
+        "duration": 9.66,
+        "text": "A real apparatus may have additional errors or dynamics. Testing this model requires checking those conditions rather than treating every discrepancy as a new postulate.",
+        "asr": "A real apparatus may have additional errors or dynamics. Testing this model requires checking  those conditions rather than treating every discrepancy as a new postulate.",
+        "wer": 0.0,
+        "exact_word_anchors": 25,
+        "caption_words": 25,
+        "file": "narration\\neural\\19_01_c9f261cdeb7811c6417b1a65.wav"
+      }
+    ]
+  },
+  {
+    "index": 20,
+    "chapter": 5,
+    "title": "Time evolution is unitary between measurements",
+    "focus": "The Hamiltonian generates the change",
+    "text": "For an isolated system, the Schrödinger equation generates unitary time evolution. A time-independent Hamiltonian gives an exponential operator. An energy eigenstate acquires only an overall phase, leaving time-independent-observable probabilities unchanged. A superposition of different energies accumulates relative phase, which can change interference and expectation values. Stationary does not mean that the ket has literally stopped acquiring phase.",
+    "kind": "explain",
+    "duration": 28.96666666666667,
+    "start": 505.6333333333333,
+    "speech_end": 534.0033333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.88,
+        "text": "For an isolated system, the Schrödinger equation generates unitary time evolution. A time-independent Hamiltonian gives an exponential operator. An energy eigenstate acquires only an overall phase, leaving time-independent-observable probabilities unchanged.",
+        "asr": "For an isolated system, the Schrödinger equation generates unitary time evolution.  A time-independent Hamiltonian gives an exponential operator. An energy eigenstate  acquires only an overall phase, leaving time-independent observable probabilities unchanged.",
+        "wer": 0.0,
+        "exact_word_anchors": 30,
+        "caption_words": 30,
+        "file": "narration\\neural\\20_00_4cd45afacf0dd1f489a0ff7e.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 17.319999999999997,
+        "duration": 11.05,
+        "text": "A superposition of different energies accumulates relative phase, which can change interference and expectation values. Stationary does not mean that the ket has literally stopped acquiring phase.",
+        "asr": "A superposition of different energies accumulates relative phase, which can change interference  and expectation values. Stationary does not mean that the ket has literally stopped acquiring  phase.",
+        "wer": 0.0,
+        "exact_word_anchors": 27,
+        "caption_words": 27,
+        "file": "narration\\neural\\20_01_e997ee3e80a3f533e0771451.wav"
+      }
+    ]
+  },
+  {
+    "index": 21,
+    "chapter": 5,
+    "title": "Watch relative phase become measurable",
+    "focus": "A z Hamiltonian rotates horizontal-spin statistics",
+    "text": "Start in horizontal plus and choose the Hamiltonian proportional to the Pauli z matrix. Write the dimensionless rotation angle as omega times time. Vertical probabilities stay one half, but horizontal plus probability oscillates as cosine squared of half that angle. At a pi rotation the state is horizontal minus. Unchanged vertical statistics alone would miss this entire change.",
+    "kind": "explain",
+    "duration": 26.166666666666668,
+    "start": 534.6,
+    "speech_end": 560.1700000000001,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 17.56,
+        "text": "Start in horizontal plus and choose the Hamiltonian proportional to the Pauli z matrix. Write the dimensionless rotation angle as omega times time. Vertical probabilities stay one half, but horizontal plus probability oscillates as cosine squared of half that angle.",
+        "asr": "Start in horizontal plus and choose the Hamiltonian proportional to the Pauli Z matrix. Write the  dimensionless rotation angle as omega times time. Vertical probabilities stay one half,  but horizontal plus probability oscillates as cosine squared of half that angle.",
+        "wer": 0.0,
+        "exact_word_anchors": 40,
+        "caption_words": 40,
+        "file": "narration\\neural\\21_00_969d8feda69b53525deecdaf.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 17.999999999999996,
+        "duration": 7.57,
+        "text": "At a pi rotation the state is horizontal minus. Unchanged vertical statistics alone would miss this entire change.",
+        "asr": "At a pi rotation, the state is horizontal minus.  Unchanged vertical statistics alone would miss this entire change.",
+        "wer": 0.0,
+        "exact_word_anchors": 18,
+        "caption_words": 18,
+        "file": "narration\\neural\\21_01_5ff010ec0720e3d9fbb7534d.wav"
+      }
+    ]
+  },
+  {
+    "index": 22,
+    "chapter": 5,
+    "title": "Predict: a pi rotation",
+    "focus": "An unchanged z distribution does not freeze the state",
+    "text": "After that pi rotation, what is the probability of horizontal plus? Predict zero, one half, or one. Then ask why the vertical measurement still gives equal probabilities. Keep track of relative phase. A conclusion about every observable cannot be inferred from measurements in a single basis.",
+    "kind": "predict",
+    "duration": 23.833333333333332,
+    "start": 560.7666666666667,
+    "speech_end": 578.0866666666667,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 11.74,
+        "text": "After that pi rotation, what is the probability of horizontal plus? Predict zero, one half, or one. Then ask why the vertical measurement still gives equal probabilities. Keep track of relative phase.",
+        "asr": "After that pi rotation, what is the probability of horizontal plus? Predict 0, 1 half, or 1.  Then ask why the vertical measurement still gives equal probabilities. Keep track of relative phase.",
+        "wer": 0.0,
+        "exact_word_anchors": 32,
+        "caption_words": 32,
+        "file": "narration\\neural\\22_00_e1ffb4ee1f17abe5bcb84a48.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 12.180000000000001,
+        "duration": 5.14,
+        "text": "A conclusion about every observable cannot be inferred from measurements in a single basis.",
+        "asr": "A conclusion about every observable cannot be inferred from measurements in a single basis.",
+        "wer": 0.0,
+        "exact_word_anchors": 14,
+        "caption_words": 14,
+        "file": "narration\\neural\\22_01_024cfc130fad49538700deff.wav"
+      }
+    ]
+  },
+  {
+    "index": 23,
+    "chapter": 5,
+    "title": "Compare two independent evolution methods",
+    "focus": "Diagonalization, closed form and a differential solver",
+    "text": "Horizontal plus probability is zero. In the laboratory, compare the analytic rotation with eigenvalue exponentiation and direct integration of the Schrödinger equation. Check norm conservation and solver convergence. Changing omega changes the time scale; confusing radians, cycles and seconds changes the prediction. Use the stated units and verify the limiting case at time zero.",
+    "kind": "reveal",
+    "duration": 25.3,
+    "start": 584.6,
+    "speech_end": 609.3100000000001,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 13.99,
+        "text": "Horizontal plus probability is zero. In the laboratory, compare the analytic rotation with eigenvalue exponentiation and direct integration of the Schrödinger equation. Check norm conservation and solver convergence.",
+        "asr": "Horizontal plus probability is zero. In the laboratory, compare the analytic rotation with  eigenvalue exponentiation and direct integration of the Schrödinger equation. Check norm conservation  and solver convergence.",
+        "wer": 0.0,
+        "exact_word_anchors": 28,
+        "caption_words": 28,
+        "file": "narration\\neural\\23_00_a55d0c5f085eaf53d4767339.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 14.430000000000001,
+        "duration": 10.28,
+        "text": "Changing omega changes the time scale; confusing radians, cycles and seconds changes the prediction. Use the stated units and verify the limiting case at time zero.",
+        "asr": "Changing omega changes the time scale. Confusing radians, cycles, and seconds changes the prediction.  Use the stated units and verify the limiting case at time zero.",
+        "wer": 0.0,
+        "exact_word_anchors": 26,
+        "caption_words": 26,
+        "file": "narration\\neural\\23_01_6405a0fb15c9211bcde01e82.wav"
+      }
+    ]
+  },
+  {
+    "index": 24,
+    "chapter": 6,
+    "title": "A single basis leaves questions unanswered",
+    "focus": "Distinct states can share identical measurement statistics",
+    "text": "We can now revisit the opening puzzle. Vertical probabilities determine populations, but not the relative phase. Two different pure states can agree on those data and disagree in another basis. Measuring horizontal and transverse spin provides additional information. Inferring a state requires a model of preparation, a sufficient set of measurements, uncertainty estimates, and an honest statement of what remains undetermined.",
+    "kind": "explain",
+    "duration": 26.733333333333334,
+    "start": 609.9,
+    "speech_end": 636.03,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.15,
+        "text": "We can now revisit the opening puzzle. Vertical probabilities determine populations, but not the relative phase. Two different pure states can agree on those data and disagree in another basis. Measuring horizontal and transverse spin provides additional information.",
+        "asr": "We can now revisit the opening puzzle. Vertical probabilities determine populations, but not  the relative phase. Two different pure states can agree on those data and disagree in another  basis. Measuring horizontal and transverse spin provides additional information.",
+        "wer": 0.0,
+        "exact_word_anchors": 38,
+        "caption_words": 38,
+        "file": "narration\\neural\\24_00_c81aa6130dc9d0f73fc6d6ec.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.589999999999996,
+        "duration": 9.54,
+        "text": "Inferring a state requires a model of preparation, a sufficient set of measurements, uncertainty estimates, and an honest statement of what remains undetermined.",
+        "asr": "Inferring a state requires a model of preparation, a sufficient set of measurements, uncertainty  estimates, and an honest statement of what remains undetermined.",
+        "wer": 0.0,
+        "exact_word_anchors": 23,
+        "caption_words": 23,
+        "file": "narration\\neural\\24_01_966b6e5fafd8735f8625c8f4.wav"
+      }
+    ]
+  },
+  {
+    "index": 25,
+    "chapter": 6,
+    "title": "Turn the postulates into an algorithm",
+    "focus": "Prepare, choose, predict, update, evolve and test",
+    "text": "Our laboratory represents a pure two-level state, an ideal observable and a defined sequence of operations. Normalize the state, find spectral projectors, compute probabilities, condition on recorded outcomes, and evolve between measurements. Do not apply the pure-state picture blindly to an unrecorded ensemble or a system entangled with its environment. Those cases require a broader state description.",
+    "kind": "explain",
+    "duration": 27.6,
+    "start": 636.6333333333333,
+    "speech_end": 663.6433333333333,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.4,
+        "text": "Our laboratory represents a pure two-level state, an ideal observable and a defined sequence of operations. Normalize the state, find spectral projectors, compute probabilities, condition on recorded outcomes, and evolve between measurements.",
+        "asr": "Our laboratory represents a pure, two-level state, an ideal observable and a defined sequence of operations.  Normalize the state, find spectral projectors, compute probabilities, condition on recorded outcomes, and evolve between measurements.",
+        "wer": 0.0,
+        "exact_word_anchors": 32,
+        "caption_words": 32,
+        "file": "narration\\neural\\25_00_fb3dbb5c1802219ccf5f7398.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.839999999999996,
+        "duration": 10.17,
+        "text": "Do not apply the pure-state picture blindly to an unrecorded ensemble or a system entangled with its environment. Those cases require a broader state description.",
+        "asr": "Do not apply the pure state picture blindly to an unrecorded ensemble or a system entangled  with its environment. Those cases require a broader state description.",
+        "wer": 0.0,
+        "exact_word_anchors": 25,
+        "caption_words": 25,
+        "file": "narration\\neural\\25_01_810dabc776478eceaa374078.wav"
+      }
+    ]
+  },
+  {
+    "index": 26,
+    "chapter": 6,
+    "title": "Predict: do vertical statistics identify the state?",
+    "focus": "Same populations, different relative phases",
+    "text": "Two preparations give identical vertical-spin probabilities. Must all their measurement predictions be identical? Choose yes, no because relative phase may differ, or yes because normalization fixes the phase. Propose an additional measurement that could distinguish the preparations. A good answer states what the available evidence does and does not determine.",
+    "kind": "predict",
+    "duration": 28.333333333333332,
+    "start": 664.2333333333333,
+    "speech_end": 686.0533333333334,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 16.36,
+        "text": "Two preparations give identical vertical-spin probabilities. Must all their measurement predictions be identical? Choose yes, no because relative phase may differ, or yes because normalization fixes the phase. Propose an additional measurement that could distinguish the preparations.",
+        "asr": "Two preparations give identical vertical spin probabilities.  Must all their measurement predictions be identical?  Choose yes, no, because relative phase may differ.  Or yes, because normalization fixes the phase.  Propose an additional measurement that could distinguish the preparations.",
+        "wer": 0.0,
+        "exact_word_anchors": 37,
+        "caption_words": 37,
+        "file": "narration\\neural\\26_00_110a402bb996d781c2829525.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 16.799999999999997,
+        "duration": 5.02,
+        "text": "A good answer states what the available evidence does and does not determine.",
+        "asr": "A good answer states what the available evidence does and does not determine.",
+        "wer": 0.0,
+        "exact_word_anchors": 13,
+        "caption_words": 13,
+        "file": "narration\\neural\\26_01_07243820bde2496905cfa5c5.wav"
+      }
+    ]
+  },
+  {
+    "index": 27,
+    "chapter": 6,
+    "title": "Your investigation starts here",
+    "focus": "Predict, compute, test and defend a model",
+    "text": "Relative phase can distinguish those preparations. Open the browser Python lab, vary the state and measurement axis, and test your predictions before running the code. Then tackle an unfamiliar three-level measurement with a degenerate outcome. Decide which coherence an ideal measurement preserves, compare independent calculations, and defend the assumptions. The postulates become useful when you can explain a new experiment, not merely repeat their names.",
+    "kind": "reveal",
+    "duration": 27.43333333333333,
+    "start": 692.5666666666667,
+    "speech_end": 719.3766666666668,
+    "voice_profile": "chatterbox_warm",
+    "engine": "chatterbox",
+    "chunks": [
+      {
+        "chunk": 0,
+        "start": 0.22,
+        "duration": 13.67,
+        "text": "Relative phase can distinguish those preparations. Open the browser Python lab, vary the state and measurement axis, and test your predictions before running the code. Then tackle an unfamiliar three-level measurement with a degenerate outcome.",
+        "asr": "Relative phase can distinguish those preparations. Open the browser Python lab,  vary the state and measurement axis, and test your predictions before running the code.  Then tackle an unfamiliar three-level measurement with a degenerate outcome.",
+        "wer": 0.0,
+        "exact_word_anchors": 35,
+        "caption_words": 35,
+        "file": "narration\\neural\\27_00_9d07dc7bf85ec60a9607a515.wav"
+      },
+      {
+        "chunk": 1,
+        "start": 14.110000000000001,
+        "duration": 12.7,
+        "text": "Decide which coherence an ideal measurement preserves, compare independent calculations, and defend the assumptions. The postulates become useful when you can explain a new experiment, not merely repeat their names.",
+        "asr": "Decide which coherence an ideal measurement preserves, compare independent calculations,  and defend the assumptions. The postulates become useful when you can explain a new experiment,  not merely repeat their names.",
+        "wer": 0.0,
+        "exact_word_anchors": 30,
+        "caption_words": 30,
+        "file": "narration\\neural\\27_01_ee048d5680780ed93aac0693.wav"
+      }
+    ]
+  }
+]
