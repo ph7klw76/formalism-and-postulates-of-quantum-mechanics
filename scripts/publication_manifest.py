@@ -4,7 +4,7 @@ import hashlib,json
 ROOT=Path(__file__).resolve().parents[1]
 DIRECTORIES=('course','docs','h5p','lab','narration','quizzes','remotion','reports','scripts','tests','video','website','webtools','.github')
 FILES=('README.md','.gitignore','LICENSE','CONTENT_LICENSE.md','build.py','requirements-ci.txt','requirements-lite.txt','requirements-neural.txt','requirements-neural-lock.txt','requirements-production.txt')
-EXTENSIONS={'.py','.mjs','.cjs','.js','.ts','.tsx','.json','.md','.txt','.yml','.yaml','.html','.css','.srt','.vtt','.ipynb','.toml','.h5p','.woff','.woff2','.ttf','.svg','.gitkeep'}
+EXTENSIONS={'.py','.mjs','.cjs','.js','.ts','.tsx','.json','.md','.txt','.yml','.yaml','.html','.css','.srt','.vtt','.ipynb','.toml','.h5p','.woff','.woff2','.ttf','.svg','.gitkeep','.csv'}
 EXCLUDED={'node_modules','__pycache__','.bundle','.cache','neural','media','manim','.venv','outputs','tools','.git'}
 
 def files():
@@ -12,7 +12,7 @@ def files():
     for name in DIRECTORIES:
         folder=ROOT/name
         if folder.exists():
-            paths.extend(p for p in folder.rglob('*') if p.is_file() and not EXCLUDED.intersection(p.relative_to(ROOT).parts) and p.suffix.lower() in EXTENSIONS)
+            paths.extend(p for p in folder.rglob('*') if p.is_file() and not EXCLUDED.intersection(p.relative_to(ROOT).parts) and (p.suffix.lower() in EXTENSIONS or p.name=='LICENSE'))
     result=[]
     for p in sorted(set(paths)):
         relative=p.relative_to(ROOT).as_posix()
