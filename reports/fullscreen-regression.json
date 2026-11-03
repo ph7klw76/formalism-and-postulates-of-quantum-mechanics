@@ -1,0 +1,111 @@
+{
+  "verified_at": "2026-11-03T14:48:30.472380+00:00",
+  "scope": "Local revised app; real uploaded YouTube learning paths and separate startup-only CI regression",
+  "startup": {
+    "status": "PASS",
+    "mode": "startup-only",
+    "url": "LOCAL_TEST_BUILD",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "automaticFullscreen": true,
+    "explicitFullscreenReturn": true,
+    "geometry": {
+      "height": 260,
+      "chapterClickable": true
+    }
+  },
+  "phone_streaming": {
+    "status": "PASS",
+    "verifiedAt": "2026-11-03T14:47:16.703Z",
+    "url": "LOCAL_TEST_BUILD",
+    "source": "https://youtu.be/s9l7TZSY0-k",
+    "embedded": true,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "fullscreenReturn": true,
+    "summaryContinuation": true,
+    "parentChapterSeek": 103.36666666666666,
+    "paths": [
+      {
+        "id": "Q1",
+        "pausedAt": 73.105259,
+        "wrongFeedback": true,
+        "reviewTime": 0,
+        "targetReview": 0,
+        "retry": true,
+        "correctScore": 1
+      },
+      {
+        "id": "Q2",
+        "pausedAt": 173.1162229217987,
+        "wrongFeedback": true,
+        "reviewTime": 103.36666666666666,
+        "targetReview": 103.36666666666666,
+        "retry": true,
+        "correctScore": 1
+      },
+      {
+        "id": "Q3",
+        "pausedAt": 270.10724206866456,
+        "wrongFeedback": true,
+        "reviewTime": 204.5,
+        "targetReview": 204.5,
+        "retry": true,
+        "correctScore": 1
+      },
+      {
+        "id": "Q4",
+        "pausedAt": 372.1052820457764,
+        "wrongFeedback": true,
+        "reviewTime": 301.53333333333336,
+        "targetReview": 301.53333333333336,
+        "retry": true,
+        "correctScore": 1
+      },
+      {
+        "id": "Q5",
+        "pausedAt": 474.118394,
+        "wrongFeedback": true,
+        "reviewTime": 402.76666666666665,
+        "targetReview": 402.76666666666665,
+        "retry": true,
+        "correctScore": 1
+      },
+      {
+        "id": "Q6",
+        "pausedAt": 579.0973158493194,
+        "wrongFeedback": true,
+        "reviewTime": 505.6333333333333,
+        "targetReview": 505.6333333333333,
+        "retry": true,
+        "correctScore": 1
+      },
+      {
+        "id": "Q7",
+        "pausedAt": 687.0985390553132,
+        "wrongFeedback": true,
+        "reviewTime": 609.9,
+        "targetReview": 609.9,
+        "retry": true,
+        "correctScore": 1
+      }
+    ],
+    "summary": {
+      "score": 5,
+      "maxScore": 5
+    },
+    "errors": [],
+    "mediaInterruptions": []
+  },
+  "source_hashes": {
+    "website/dist/app.js": "5e5ed9699421afe2a95dda8758302d9bc629546988f50d76fc5ca9f82a33c418",
+    "website/dist/index.html": "58cb6102d0e487d6136c66dfb1655773739cbdf47260fd0af456f18e1e8ad5b1",
+    "webtools/test-fullscreen.cjs": "8e2d71709d695b413537a39a0033e400a0131034f15c8ad7fe300a81a4a96635",
+    "webtools/test-learning.cjs": "1a67f96b09296c5e416dc4d37d4cbc14c26ebf2b0e82b66caf15476682e70e3a"
+  },
+  "timing_change_frames": 0
+}

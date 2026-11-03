@@ -19,9 +19,12 @@ async function main(){
   if(await player.locator('.h5p-splash').isVisible())await player.locator('.h5p-splash').click();else await player.locator('.h5p-controls .h5p-pause').click();
   await player.waitForFunction(()=>H5P.instances[0].video.getCurrentTime()>.5,{},{timeout:45000,polling:250});
   const fullscreen=player.locator('.h5p-controls .h5p-fullscreen');
-  await fullscreen.click();await player.waitForFunction(()=>!!document.fullscreenElement,{},{timeout:10000,polling:250});
+  const exited=async()=>{await player.waitForFunction(()=>!document.fullscreenElement&&!H5P.isFullscreen&&!H5P.instances[0].hasFullScreen,{},{timeout:10000,polling:250});await page.waitForFunction(()=>!document.fullscreenElement,{},{timeout:10000,polling:250});};
+  // Native H5P enters fullscreen automatically when starting a minimal phone player.
+  if(await player.evaluate(()=>!!document.fullscreenElement)){await fullscreen.click();await exited();}
+  await fullscreen.click();await player.waitForFunction(()=>!!document.fullscreenElement&&H5P.isFullscreen&&H5P.instances[0].hasFullScreen,{},{timeout:10000,polling:250});
   await page.screenshot({path:path.join(out,label+'-fullscreen.png')});
-  await fullscreen.click();await player.waitForFunction(()=>!document.fullscreenElement,{},{timeout:10000,polling:250});
+  await fullscreen.click();await exited();
   await page.screenshot({path:path.join(out,label+'-playing.png'),fullPage:true});
   let parentChapterSeek=null;
   if(embedded){await page.locator('#chapters button').nth(1).click();await player.waitForFunction(t=>Math.abs(H5P.instances[0].video.getCurrentTime()-t)<2,events.chapters[1].start_seconds,{timeout:15000,polling:250});parentChapterSeek=await player.evaluate(()=>H5P.instances[0].video.getCurrentTime());}
