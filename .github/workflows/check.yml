@@ -38,7 +38,9 @@ jobs:
           node scripts/check-site.cjs
       - run: pnpm --dir webtools exec playwright install --with-deps chromium
       - name: Responsive website, genuine H5P and executable browser lab
-        run: node webtools/test-course.cjs
+        run: |
+          node webtools/test-course.cjs
+          node webtools/test-fullscreen.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
