@@ -1,0 +1,163 @@
+[
+  {
+    "id": "Q1",
+    "scene": 2,
+    "review_scene": 0,
+    "question": "For the spin degree of freedom of a spin-½ system, what is the complex Hilbert-space dimension?",
+    "options": [
+      "Two.",
+      "Three, because there are three spatial axes.",
+      "Infinite, even when all other degrees of freedom are excluded."
+    ],
+    "correct": 0,
+    "explanation": "Two independent spin states span the spin-only space. Different measurement axes select different bases in that same space.",
+    "wrong": {
+      "1": "Apparatus directions are not independent spin degrees of freedom. A continuum of axes still acts in the same two-dimensional spin space.",
+      "2": "Position can require an infinite-dimensional space, but position and other degrees of freedom are explicitly excluded here."
+    },
+    "time_seconds": 73,
+    "frame": 2190,
+    "review_seconds": 0.0,
+    "hold_start_frame": 2170,
+    "reveal_frame": 2365,
+    "timestamp": "01:13"
+  },
+  {
+    "id": "Q2",
+    "scene": 6,
+    "review_scene": 4,
+    "question": "Prepare |x+⟩ and measure S_z once. Which results can the ideal detector report?",
+    "options": [
+      "Zero, because the expectation is zero.",
+      "Any angular momentum between −ħ/2 and +ħ/2.",
+      "Either +ħ/2 or −ħ/2."
+    ],
+    "correct": 2,
+    "explanation": "A single ideal projective measurement yields an eigenvalue. In |x+⟩ these two outcomes each have probability 1/2; zero is their expectation, not a detector outcome.",
+    "wrong": {
+      "0": "An ensemble average is not necessarily an eigenvalue. Find the spectrum of S_z before predicting a single shot.",
+      "1": "This spin observable has a discrete two-value spectrum. A classical continuous projection of a rotating arrow is not the model."
+    },
+    "time_seconds": 173,
+    "frame": 5190,
+    "review_seconds": 103.36666666666666,
+    "hold_start_frame": 5173,
+    "reveal_frame": 5368,
+    "timestamp": "02:53"
+  },
+  {
+    "id": "Q3",
+    "scene": 10,
+    "review_scene": 8,
+    "question": "After recording x+ in an ideal S_x measurement, what is P(z+) in an immediate S_z measurement?",
+    "options": [
+      "The original preparation probability, 0.6.",
+      "1/2.",
+      "1."
+    ],
+    "correct": 1,
+    "explanation": "Condition on the recorded first result: the new state is |x+⟩. Its overlap squared with |z+⟩ is 1/2.",
+    "wrong": {
+      "0": "The recorded first measurement changes the conditional state. Reusing the preparation amplitudes skips the projection-and-normalization step.",
+      "2": "Immediate repetition of S_x would repeat x+ with certainty. The second observable here is S_z, so use a different eigenbasis."
+    },
+    "time_seconds": 270,
+    "frame": 8100,
+    "review_seconds": 204.5,
+    "hold_start_frame": 8073,
+    "reveal_frame": 8268,
+    "timestamp": "04:30"
+  },
+  {
+    "id": "Q4",
+    "scene": 14,
+    "review_scene": 12,
+    "question": "The theory gives ⟨S_z⟩ = 0.1ħ and P(z+) = 0.6. What does that mean?",
+    "options": [
+      "The probability-weighted theoretical mean is 0.1ħ; finite samples fluctuate.",
+      "Each detector result equals 0.1ħ.",
+      "Every batch of 1000 contains exactly 600 plus results."
+    ],
+    "correct": 0,
+    "explanation": "The mean is an ensemble prediction. Individual outcomes are ±ħ/2 and the number of plus results in independent trials is binomial.",
+    "wrong": {
+      "1": "0.1ħ is not in the spectrum of S_z. Distinguish a mean of detector results from one detector result.",
+      "2": "600 is the expected count, not a guarantee. The binomial count standard deviation is √(1000×0.6×0.4) ≈ 15.5."
+    },
+    "time_seconds": 372,
+    "frame": 11160,
+    "review_seconds": 301.53333333333336,
+    "hold_start_frame": 11146,
+    "reveal_frame": 11341,
+    "timestamp": "06:12"
+  },
+  {
+    "id": "Q5",
+    "scene": 18,
+    "review_scene": 16,
+    "question": "Prepare |z+⟩, measure S_x and discard its result, then measure S_z. What is P(z+)?",
+    "options": [
+      "1, because ignoring the record means nothing changed.",
+      "0, because incompatible measurements forbid z+.",
+      "1/2."
+    ],
+    "correct": 2,
+    "explanation": "The unrecorded ideal S_x measurement leaves an equal mixture of |x+⟩ and |x−⟩. Each gives P(z+) = 1/2.",
+    "wrong": {
+      "0": "Discarding a measurement record is not the same as omitting the measurement. Average the conditional post-measurement branches.",
+      "1": "Incompatibility does not forbid either z outcome. Compute both conditional branches and their probabilities."
+    },
+    "time_seconds": 474,
+    "frame": 14220,
+    "review_seconds": 402.76666666666665,
+    "hold_start_frame": 14201,
+    "reveal_frame": 14396,
+    "timestamp": "07:54"
+  },
+  {
+    "id": "Q6",
+    "scene": 22,
+    "review_scene": 20,
+    "question": "Start in |x+⟩ and evolve with H = ħωσ_z/2 through ωt = π. What is P(x+)?",
+    "options": [
+      "0.",
+      "1/2.",
+      "1."
+    ],
+    "correct": 0,
+    "explanation": "The relative phase changes |x+⟩ into |x−⟩ up to an overall phase. Thus P(x+) = cos²(π/2) = 0, while both z probabilities remain 1/2.",
+    "wrong": {
+      "1": "The z distribution stays balanced, but the question asks about x. Relative phase is observable in the x basis.",
+      "2": "An energy eigenstate would acquire only overall phase. |x+⟩ is a superposition of the z energy eigenstates."
+    },
+    "time_seconds": 579,
+    "frame": 17370,
+    "review_seconds": 505.6333333333333,
+    "hold_start_frame": 17343,
+    "reveal_frame": 17538,
+    "timestamp": "09:39"
+  },
+  {
+    "id": "Q7",
+    "scene": 26,
+    "review_scene": 24,
+    "question": "Two pure preparations have identical z-spin probabilities. Must all measurement predictions agree?",
+    "options": [
+      "Yes; the z probabilities completely specify every pure spin state.",
+      "No; different relative phases can be distinguished in other bases.",
+      "Yes; normalization uniquely determines the relative phase."
+    ],
+    "correct": 1,
+    "explanation": "One basis fixes populations but leaves relative phase undetermined. Additional x/y statistics can distinguish those states; include uncertainty and preparation assumptions.",
+    "wrong": {
+      "0": "Equal probabilities in one basis do not specify all amplitudes. Test another measurement direction.",
+      "2": "Normalization constrains squared magnitudes, not the remaining relative phase. A global phase is unobservable, but relative phase can matter."
+    },
+    "time_seconds": 687,
+    "frame": 20610,
+    "review_seconds": 609.9,
+    "hold_start_frame": 20582,
+    "reveal_frame": 20777,
+    "timestamp": "11:27"
+  }
+]

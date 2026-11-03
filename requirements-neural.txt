@@ -1,0 +1,9 @@
+# Install CUDA torch/torchaudio first; see docs/neural-narration.md.
+chatterbox-tts==0.1.7
+kokoro==0.9.4
+soundfile>=0.13,<1
+truststore>=0.10,<1
+pyloudnorm>=0.1,<1
+faster-whisper>=1.2,<2
+imageio-ffmpeg==0.8.0
+espeakng-loader>=0.2,<1

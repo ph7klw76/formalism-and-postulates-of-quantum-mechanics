@@ -1,0 +1,12 @@
+{
+	"dependencies": {
+		"@lumieducation/h5p-server": "10.0.4",
+		"@lumieducation/h5p-html-exporter": "10.0.4",
+		"postcss": "8.5.32",
+		"postcss-import": "17.0.1",
+		"postcss-url": "10.1.4",
+		"postcss-safe-parser": "7.1.0",
+		"esbuild": "0.28.2",
+		"playwright": "1.64.1"
+	}
+}

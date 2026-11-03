@@ -1,0 +1,1138 @@
+{
+  "interactiveVideo": {
+    "video": {
+      "startScreenOptions": {
+        "title": "Formalism and Postulates of Quantum Mechanics",
+        "hideStartTitle": false,
+        "shortStartDescription": "Predict, explain and test. Seven original checkpoints and a final concept summary."
+      },
+      "textTracks": {
+        "videoTrack": [
+          {
+            "label": "English",
+            "kind": "subtitles",
+            "srcLang": "en",
+            "track": {
+              "path": "subtitles/lecture.vtt",
+              "mime": "text/vtt"
+            }
+          }
+        ],
+        "defaultTrackLabel": "English"
+      },
+      "files": [
+        {
+          "path": "https://youtu.be/s9l7TZSY0-k",
+          "mime": "video/YouTube",
+          "copyright": {
+            "license": "CC BY",
+            "licenseVersion": "4.0"
+          }
+        }
+      ]
+    },
+    "assets": {
+      "interactions": [
+        {
+          "duration": {
+            "from": 73,
+            "to": 78
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q1",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>Two.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Two independent spin states span the spin-only space. Different measurement axes select different bases in that same space.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Three, because there are three spatial axes.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Apparatus directions are not independent spin degrees of freedom. A continuum of axes still acts in the same two-dimensional spin space.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Infinite, even when all other degrees of freedom are excluded.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Position can require an infinite-dimensional space, but position and other degrees of freedom are explicitly excluded here.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>For the spin degree of freedom of a spin-½ system, what is the complex Hilbert-space dimension?</p>"
+            },
+            "subContentId": "e102bfa5-6cc0-5322-b9c3-03310056af74",
+            "metadata": {
+              "title": "Q1",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 0.0,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 173,
+            "to": 178
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q2",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>Zero, because the expectation is zero.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "An ensemble average is not necessarily an eigenvalue. Find the spectrum of S_z before predicting a single shot.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Any angular momentum between −ħ/2 and +ħ/2.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "This spin observable has a discrete two-value spectrum. A classical continuous projection of a rotating arrow is not the model.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Either +ħ/2 or −ħ/2.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "A single ideal projective measurement yields an eigenvalue. In |x+⟩ these two outcomes each have probability 1/2; zero is their expectation, not a detector outcome.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>Prepare |x+⟩ and measure S_z once. Which results can the ideal detector report?</p>"
+            },
+            "subContentId": "c41000fe-3b81-531b-92cc-baeb8e13afa0",
+            "metadata": {
+              "title": "Q2",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 103.36666666666666,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 270,
+            "to": 275
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q3",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>The original preparation probability, 0.6.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "The recorded first measurement changes the conditional state. Reusing the preparation amplitudes skips the projection-and-normalization step.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>1/2.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Condition on the recorded first result: the new state is |x+⟩. Its overlap squared with |z+⟩ is 1/2.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>1.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Immediate repetition of S_x would repeat x+ with certainty. The second observable here is S_z, so use a different eigenbasis.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>After recording x+ in an ideal S_x measurement, what is P(z+) in an immediate S_z measurement?</p>"
+            },
+            "subContentId": "5ee4925f-32fb-52b1-8e28-2bc8d8200f4b",
+            "metadata": {
+              "title": "Q3",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 204.5,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 372,
+            "to": 377
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q4",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>The probability-weighted theoretical mean is 0.1ħ; finite samples fluctuate.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "The mean is an ensemble prediction. Individual outcomes are ±ħ/2 and the number of plus results in independent trials is binomial.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Each detector result equals 0.1ħ.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "0.1ħ is not in the spectrum of S_z. Distinguish a mean of detector results from one detector result.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Every batch of 1000 contains exactly 600 plus results.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "600 is the expected count, not a guarantee. The binomial count standard deviation is √(1000×0.6×0.4) ≈ 15.5.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>The theory gives ⟨S_z⟩ = 0.1ħ and P(z+) = 0.6. What does that mean?</p>"
+            },
+            "subContentId": "50c9b57f-3808-546f-b905-d17f36004f1f",
+            "metadata": {
+              "title": "Q4",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 301.53333333333336,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 474,
+            "to": 479
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q5",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>1, because ignoring the record means nothing changed.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Discarding a measurement record is not the same as omitting the measurement. Average the conditional post-measurement branches.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>0, because incompatible measurements forbid z+.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Incompatibility does not forbid either z outcome. Compute both conditional branches and their probabilities.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>1/2.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "The unrecorded ideal S_x measurement leaves an equal mixture of |x+⟩ and |x−⟩. Each gives P(z+) = 1/2.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>Prepare |z+⟩, measure S_x and discard its result, then measure S_z. What is P(z+)?</p>"
+            },
+            "subContentId": "f13a51ab-3171-52f1-9706-7e8503386050",
+            "metadata": {
+              "title": "Q5",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 402.76666666666665,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 579,
+            "to": 584
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q6",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>0.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "The relative phase changes |x+⟩ into |x−⟩ up to an overall phase. Thus P(x+) = cos²(π/2) = 0, while both z probabilities remain 1/2.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>1/2.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "The z distribution stays balanced, but the question asks about x. Relative phase is observable in the x basis.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>1.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "An energy eigenstate would acquire only overall phase. |x+⟩ is a superposition of the z energy eigenstates.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>Start in |x+⟩ and evolve with H = ħωσ_z/2 through ωt = π. What is P(x+)?</p>"
+            },
+            "subContentId": "222ab7d6-9bf7-5094-b437-629070e467d2",
+            "metadata": {
+              "title": "Q6",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 505.6333333333333,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 687,
+            "to": 692
+          },
+          "pause": true,
+          "displayType": "poster",
+          "buttonOnMobile": true,
+          "label": "Q7",
+          "x": 5,
+          "y": 8,
+          "width": 90,
+          "height": 80,
+          "libraryTitle": "Multiple Choice",
+          "action": {
+            "library": "H5P.MultiChoice 1.16",
+            "params": {
+              "media": {
+                "disableImageZooming": false
+              },
+              "answers": [
+                {
+                  "text": "<p>Yes; the z probabilities completely specify every pure spin state.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Equal probabilities in one basis do not specify all amplitudes. Test another measurement direction.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>No; different relative phases can be distinguished in other bases.</p>",
+                  "correct": true,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "One basis fixes populations but leaves relative phase undetermined. Additional x/y statistics can distinguish those states; include uncertainty and preparation assumptions.",
+                    "notChosenFeedback": ""
+                  }
+                },
+                {
+                  "text": "<p>Yes; normalization uniquely determines the relative phase.</p>",
+                  "correct": false,
+                  "tipsAndFeedback": {
+                    "tip": "",
+                    "chosenFeedback": "Normalization constrains squared magnitudes, not the remaining relative phase. A global phase is unobservable, but relative phase can matter.",
+                    "notChosenFeedback": ""
+                  }
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Explain your reasoning. Review the relevant explanation or test the prediction in the laboratory."
+                }
+              ],
+              "UI": {
+                "checkAnswerButton": "Check",
+                "submitAnswerButton": "Submit",
+                "showSolutionButton": "Show solution",
+                "tryAgainButton": "Retry",
+                "tipsLabel": "Show tip",
+                "scoreBarLabel": "You got :num out of :total points",
+                "tipAvailable": "Tip available",
+                "feedbackAvailable": "Feedback available",
+                "readFeedback": "Read feedback",
+                "wrongAnswer": "Wrong answer",
+                "correctAnswer": "Correct answer",
+                "shouldCheck": "Should have been checked",
+                "shouldNotCheck": "Should not have been checked",
+                "noInput": "Please answer before viewing the solution",
+                "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+              },
+              "behaviour": {
+                "enableRetry": true,
+                "enableSolutionsButton": true,
+                "enableCheckButton": true,
+                "type": "single",
+                "singlePoint": false,
+                "randomAnswers": false,
+                "showSolutionsRequiresInput": true,
+                "confirmCheckDialog": false,
+                "confirmRetryDialog": false,
+                "autoCheck": false,
+                "passPercentage": 100,
+                "showScorePoints": true
+              },
+              "confirmCheck": {
+                "header": "Finish ?",
+                "body": "Are you sure you wish to finish ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Finish"
+              },
+              "confirmRetry": {
+                "header": "Retry ?",
+                "body": "Are you sure you wish to retry ?",
+                "cancelLabel": "Cancel",
+                "confirmLabel": "Confirm"
+              },
+              "question": "<p>Two pure preparations have identical z-spin probabilities. Must all measurement predictions agree?</p>"
+            },
+            "subContentId": "971d6d58-005f-5027-a367-344219325665",
+            "metadata": {
+              "title": "Q7",
+              "contentType": "H5P.MultiChoice",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          },
+          "adaptivity": {
+            "wrong": {
+              "seekTo": 609.9,
+              "allowOptOut": true,
+              "message": "Review the explanation, then return to this question and revise your reasoning.",
+              "seekLabel": "Review explanation"
+            },
+            "requireCompletion": false
+          },
+          "visuals": {
+            "backgroundColor": "rgb(255,255,255)",
+            "boxShadow": true
+          }
+        },
+        {
+          "duration": {
+            "from": 719.5666666666667,
+            "to": 720.0
+          },
+          "pause": true,
+          "displayType": "button",
+          "buttonOnMobile": true,
+          "label": "Final concepts",
+          "x": 70,
+          "y": 70,
+          "width": 25,
+          "height": 20,
+          "bigDialog": true,
+          "libraryTitle": "Summary",
+          "action": {
+            "library": "H5P.Summary 1.10",
+            "params": {
+              "intro": "<p>Choose the statement you can defend. Then complete the independent transfer task.</p>",
+              "summaries": [
+                {
+                  "summary": [
+                    "<p>A basis change alters coordinates while preserving the physical preparation.</p>",
+                    "<p>Every change in state-vector coordinates is a new preparation.</p>"
+                  ],
+                  "tip": "Use the postulates and explicit assumptions, then test your prediction in the lab."
+                },
+                {
+                  "summary": [
+                    "<p>Projective measurement outcomes are eigenvalues; probabilities use squared projection norms.</p>",
+                    "<p>Probability amplitudes themselves are always nonnegative probabilities.</p>"
+                  ],
+                  "tip": "Use the postulates and explicit assumptions, then test your prediction in the lab."
+                },
+                {
+                  "summary": [
+                    "<p>A recorded result requires a conditional state update before the next prediction.</p>",
+                    "<p>Always reuse the original preparation after a recorded measurement.</p>"
+                  ],
+                  "tip": "Use the postulates and explicit assumptions, then test your prediction in the lab."
+                },
+                {
+                  "summary": [
+                    "<p>A relative phase can change some observables even when z probabilities stay fixed.</p>",
+                    "<p>If z probabilities are fixed, the quantum state cannot evolve.</p>"
+                  ],
+                  "tip": "Use the postulates and explicit assumptions, then test your prediction in the lab."
+                },
+                {
+                  "summary": [
+                    "<p>A state inference needs sufficient measurements, uncertainty and explicit model assumptions.</p>",
+                    "<p>A single measurement basis always determines the entire quantum state.</p>"
+                  ],
+                  "tip": "Use the postulates and explicit assumptions, then test your prediction in the lab."
+                }
+              ],
+              "overallFeedback": [
+                {
+                  "from": 0,
+                  "to": 100,
+                  "feedback": "Formative practice is a starting point. Submit an independent explanation and computational evidence."
+                }
+              ],
+              "solvedLabel": "Progress:",
+              "scoreLabel": "Wrong answers:",
+              "resultLabel": "Your result",
+              "labelCorrect": "Correct.",
+              "labelIncorrect": "Incorrect! Please try again.",
+              "alternativeIncorrectLabel": "Incorrect",
+              "labelCorrectAnswers": "Correct answers.",
+              "tipButtonLabel": "Show tip",
+              "scoreBarLabel": "You got :num out of :total points",
+              "progressText": "Progress :num of :total"
+            },
+            "subContentId": "3e9ecb97-9b14-5053-be5d-8c9607011c94",
+            "metadata": {
+              "title": "Final concepts",
+              "contentType": "H5P.Summary",
+              "license": "CC BY",
+              "licenseVersion": "4.0",
+              "authors": [
+                {
+                  "name": "Quantum Formalism Lab",
+                  "role": "Author"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "bookmarks": [
+        {
+          "time": 0.0,
+          "label": "States and bases"
+        },
+        {
+          "time": 103.36666666666666,
+          "label": "Observables and outcomes"
+        },
+        {
+          "time": 204.5,
+          "label": "Born rule and state update"
+        },
+        {
+          "time": 301.53333333333336,
+          "label": "Expectation is an ensemble"
+        },
+        {
+          "time": 402.76666666666665,
+          "label": "Order and compatibility"
+        },
+        {
+          "time": 505.6333333333333,
+          "label": "Quantum time evolution"
+        },
+        {
+          "time": 609.9,
+          "label": "From postulates to an investigation"
+        }
+      ],
+      "endscreens": [
+        {
+          "time": 719.95,
+          "label": "Review formative answers"
+        }
+      ]
+    }
+  },
+  "override": {
+    "autoplay": false,
+    "loop": false,
+    "showBookmarksmenuOnLoad": false,
+    "showRewind10": true,
+    "preventSkippingMode": "none",
+    "deactivateSound": false
+  },
+  "l10n": {
+    "interaction": "Interaction",
+    "play": "Play",
+    "pause": "Pause",
+    "mute": "Mute, currently unmuted",
+    "unmute": "Unmute, currently muted",
+    "quality": "Video Quality",
+    "captions": "Captions",
+    "close": "Close",
+    "fullscreen": "Fullscreen",
+    "exitFullscreen": "Exit Fullscreen",
+    "summary": "Open summary dialog",
+    "bookmarks": "Bookmarks",
+    "endscreen": "Submit screen",
+    "defaultAdaptivitySeekLabel": "Continue",
+    "continueWithVideo": "Continue with video",
+    "more": "More player options",
+    "playbackRate": "Playback Rate",
+    "rewind10": "Rewind 10 Seconds",
+    "navDisabled": "Navigation is disabled",
+    "navForwardDisabled": "Navigating forward is disabled",
+    "sndDisabled": "Sound is disabled",
+    "requiresCompletionWarning": "You need to answer all the questions correctly before continuing.",
+    "back": "Back",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "currentTime": "Current time:",
+    "totalTime": "Total time:",
+    "singleInteractionAnnouncement": "Interaction appeared:",
+    "multipleInteractionsAnnouncement": "Multiple interactions appeared.",
+    "videoPausedAnnouncement": "Video is paused",
+    "content": "Content",
+    "answered": "@answered answered",
+    "endcardTitle": "@answered Question(s) answered",
+    "endcardInformation": "You have answered @answered questions, click below to submit your answers.",
+    "endcardInformationOnSubmitButtonDisabled": "You have answered @answered questions.",
+    "endcardInformationNoAnswers": "You have not answered any questions.",
+    "endcardInformationMustHaveAnswer": "You have to answer at least one question before you can submit your answers.",
+    "endcardSubmitButton": "Submit Answers",
+    "endcardSubmitMessage": "Your answers have been submitted!",
+    "endcardTableRowAnswered": "Answered questions",
+    "endcardTableRowScore": "Score",
+    "endcardAnsweredScore": "answered",
+    "endCardTableRowSummaryWithScore": "You got @score out of @total points for the @question that appeared after @minutes minutes and @seconds seconds.",
+    "endCardTableRowSummaryWithoutScore": "You have answered the @question that appeared after @minutes minutes and @seconds seconds.",
+    "videoProgressBar": "Video progress",
+    "howToCreateInteractions": "Play the video to start creating interactions"
+  }
+}

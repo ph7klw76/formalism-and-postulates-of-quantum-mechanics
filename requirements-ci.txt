@@ -1,0 +1,9 @@
+-r requirements-lite.txt
+numpy==2.5.1
+scipy==1.18.0
+matplotlib==3.11.0
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+ipykernel>=6.29,<8
+srt==3.5.3
+requests>=2.32,<3

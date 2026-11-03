@@ -1,0 +1,36 @@
+[
+  {
+    "file": "H5P.InteractiveVideo.h5p",
+    "url": "https://api.h5p.org/v1/content-types/H5P.InteractiveVideo",
+    "sha256": "b1bc055a58c9fe903ab7ab63af4700dae06ccc2d754ae1c3491670acb631c535"
+  },
+  {
+    "file": "H5P.MultiChoice.h5p",
+    "url": "https://api.h5p.org/v1/content-types/H5P.MultiChoice",
+    "sha256": "1c60785f1e9b6630b30d4e9bcc4b7ec1c8976f05bf50c41ddbb25e59fd2c8fdb"
+  },
+  {
+    "file": "H5P.Summary.h5p",
+    "url": "https://api.h5p.org/v1/content-types/H5P.Summary",
+    "sha256": "e0716a6563926bfc15f493ec2e60575097a47eddb36c6f0a45434a16a1ba91ed"
+  },
+  {
+    "file": "core",
+    "url": "https://codeload.github.com/h5p/h5p-php-library/zip/1e21b7a2da4ae9c4f1f9e61f7ae1038f8850fb82",
+    "revision": "1e21b7a2da4ae9c4f1f9e61f7ae1038f8850fb82",
+    "sha256": "04eff9a5d2e1126b3966d3e3e5ee63c34a68ce8a3e87f6d7ed9b67e9b55585d2"
+  },
+  {
+    "file": "editor",
+    "url": "https://codeload.github.com/h5p/h5p-editor-php-library/zip/3bec2594356cf1be4e6401f7e7e557650720aa9b",
+    "revision": "3bec2594356cf1be4e6401f7e7e557650720aa9b",
+    "sha256": "a6907bb5915fb6f277245ad9c2a6bcc58c58123988e19d5eab6be0f562c205ac"
+  },
+  {
+    "file": "video-upstream",
+    "url": "https://codeload.github.com/h5p/h5p-video/zip/0293f342d757b5d7623ba841e1e513365ae42495",
+    "revision": "0293f342d757b5d7623ba841e1e513365ae42495",
+    "sha256": "0080ac1a0df002063719a02ffdca4d9cc39cfc9010a8d3f884ade5e7f1a69c1e",
+    "version": "1.6.81"
+  }
+]

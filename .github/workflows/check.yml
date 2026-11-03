@@ -1,0 +1,48 @@
+name: Check course sources
+on:
+  pull_request:
+  push:
+    branches: [course-production]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.25.0'
+      - run: python -m pip install -r requirements-ci.txt
+      - run: pnpm --dir remotion install --frozen-lockfile
+      - run: pnpm --dir webtools install --frozen-lockfile
+      - name: Scientific model, measured timing and actual desktop notebook
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/check_course.py
+          pnpm --dir remotion typecheck
+          pnpm --dir remotion test
+      - name: Build the feature course without deploying
+        run: |
+          python scripts/build_pages.py
+          node scripts/check-site.cjs
+      - run: pnpm --dir webtools exec playwright install --with-deps chromium
+      - name: Responsive website, genuine H5P and executable browser lab
+        run: node webtools/test-course.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: course-verification
+          path: |
+            outputs/browser
+            outputs/course-checks.json
+            outputs/Quantum_Formalism_Lab_executed.ipynb

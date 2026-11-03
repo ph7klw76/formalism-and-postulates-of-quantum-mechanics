@@ -1,0 +1,83 @@
+{
+  "selected_profile": "chatterbox_warm",
+  "fallback_profile": "kokoro_heart",
+  "device": "cuda",
+  "seed": 2026,
+  "native_rate": 24000,
+  "delivery_rate": 48000,
+  "target_lufs": -16,
+  "true_peak_db": -1.5,
+  "question_pause_seconds": 6.5,
+  "chunk_pause_seconds": 0.22,
+  "profiles": {
+    "chatterbox_warm": {
+      "engine": "chatterbox",
+      "label": "Warm lecturer",
+      "voice": "synthetic_kokoro_heart",
+      "exaggeration": 0.4,
+      "cfg_weight": 0.3,
+      "temperature": 0.7
+    },
+    "chatterbox_expressive": {
+      "engine": "chatterbox",
+      "label": "Curious storyteller",
+      "voice": "builtin",
+      "exaggeration": 0.65,
+      "cfg_weight": 0.3,
+      "temperature": 0.7
+    },
+    "kokoro_heart": {
+      "engine": "kokoro",
+      "label": "Kokoro Heart — calm lecturer",
+      "voice": "af_heart",
+      "speed": 0.97
+    }
+  },
+  "pronunciation": {
+    "Schrödinger": {
+      "chatterbox": "Shroh-ding-er",
+      "kokoro": "[Schrödinger](/ʃɹˈOdɪŋɚ/)",
+      "guide": "SHROH-ding-er"
+    },
+    "Schrodinger": {
+      "chatterbox": "Shroh-ding-er",
+      "kokoro": "[Schrödinger](/ʃɹˈOdɪŋɚ/)",
+      "guide": "SHROH-ding-er"
+    },
+    "wavefunction": {
+      "chatterbox": "wave function",
+      "kokoro": "wave function",
+      "guide": "WAVE-function"
+    },
+    "kappa": {
+      "chatterbox": "kappa",
+      "kokoro": "[kappa](/kˈæpə/)",
+      "guide": "KAP-uh"
+    },
+    "Planck's": {
+      "chatterbox": "Plank's",
+      "kokoro": "[Planck's](/plˈæŋks/)",
+      "guide": "PLANKS"
+    },
+    "h-bar": {
+      "chatterbox": "h bar",
+      "kokoro": "h bar",
+      "guide": "aitch bar"
+    },
+    "Dirac": {
+      "chatterbox": "Dee-rack",
+      "kokoro": "Dirac",
+      "guide": "dee-RACK"
+    },
+    "Hermitian": {
+      "chatterbox": "her-mish-un",
+      "kokoro": "Hermitian",
+      "guide": "her-MISH-un"
+    },
+    "Pauli": {
+      "chatterbox": "Pow-lee",
+      "kokoro": "Pauli",
+      "guide": "POW-lee"
+    }
+  }
+}

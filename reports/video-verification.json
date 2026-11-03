@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "edition": "full",
+  "file": "Quantum_Formalism_Lecture.mp4",
+  "frames": 21600,
+  "duration_seconds": 720.0,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "codec": "H.264/AAC",
+  "pixel_format": "yuv420p",
+  "color_space": "limited BT.709",
+  "audio_tracks": 1,
+  "chapters": 7,
+  "embedded_caption_cues": 183,
+  "full_decode": true,
+  "audio_correlations": [
+    0.9999936222642247,
+    0.9999969503954013,
+    0.9999953161896245
+  ],
+  "integrated_lufs": -16.22,
+  "true_peak_db": -1.41,
+  "verified_at": "2026-11-03T14:25:37.616281+00:00",
+  "video_sha256": "01b449c4a12189522cd1d39aa4d0a5a73b97fdba275e63cea4b9ce659321962c",
+  "timeline_sha256": "7096248cfd9b96b08139b38f5ee78db6bdd8567f1d19f7ce423c2538110b4dea",
+  "narration_sha256": "f83c9b14848d7aa03a31ecaf0be8d12ef65d907f1c4d0a7971d63f7e405edd7f"
+}
