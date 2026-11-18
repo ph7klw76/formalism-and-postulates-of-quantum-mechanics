@@ -7,13 +7,14 @@ ROOT=Path(__file__).resolve().parents[1];cfg=json.loads((ROOT/'course/config.jso
 base=os.environ.get('SITE_URL',cfg['website_url']).rstrip('/')+'/'
 assert base==cfg['website_url']
 resources=['','config.js','h5p/formalism.html','h5p/Quantum_Formalism_Interactive.h5p','h5p/question-1.html','lecture.srt','lab/lab/index.html','lab/files/Quantum_Formalism_Lab.ipynb','Quantum_Formalism_Lab.ipynb','assessment.html'];rows=[]
+resources.extend(['studies.js', 'studies.css'])
 for name in resources:
     for attempt in range(12):
         try:
             with urlopen(Request(urljoin(base,name),headers={'User-Agent':'Quantum-formalism-course-verification'}),timeout=30) as r:
                 data=r.read();assert r.status==200 and data
                 if name=='config.js':assert cfg['youtube_url'].encode() in data
-                if name in ['config.js','h5p/formalism.html']:
+                if name in ['config.js','h5p/formalism.html','studies.js','studies.css']:
                     assert hashlib.sha256(data).digest()==hashlib.sha256((ROOT/'website/dist'/name).read_bytes()).digest()
                 if name.endswith('.ipynb'):assert json.loads(data)['nbformat']==4
                 rows.append(dict(path=name or '/',status=200,bytes=len(data)));break

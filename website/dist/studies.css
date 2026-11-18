@@ -1,0 +1,25 @@
+.study-routes h2 { font-size:clamp(1.6rem,3vw,2.6rem); margin:0 0 .8rem; }
+.study-routes a { display:block; font-weight:bold; text-decoration-thickness:1px; }
+.study-routes a span { margin-left:.25rem; }
+.study-routes p { margin:.25rem 0 1.1rem; }
+.quantum-study { max-width:1040px; margin:auto; scroll-margin-top:1rem; }
+.quantum-study + .quantum-study { margin-top:4rem; padding-top:2.5rem; border-top:1px solid var(--line); }
+.quantum-study h2 { font-size:clamp(1.8rem,4vw,3rem); margin:0; }
+.quantum-study > p, .quantum-study [data-study] > p { max-width:78ch; }
+.prediction-choice { display:flex; align-items:end; flex-wrap:wrap; gap:.75rem; margin:1.3rem 0; }
+.prediction-choice select { display:block; padding:.55rem; max-width:100%; font:inherit; background:white; color:var(--ink); border:1px solid var(--muted); border-radius:4px; }
+.quantum-study button { padding:.6rem .9rem; border:1px solid var(--teal); color:white; background:#086e67; border-radius:4px; cursor:pointer; }
+.quantum-study button:disabled { color:#53655f; background:#e6ece6; border-color:#bcc8c2; cursor:default; }
+.prediction-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+.prediction-pair figure { padding:.8rem; margin:0; border:1px solid var(--line); border-radius:8px; background:white; }
+.prediction-pair figcaption, .quantum-study label { font-weight:600; }
+.prediction-pair svg { display:block; width:100%; height:auto; max-height:235px; font:13px Arial,sans-serif; fill:var(--ink); }
+.trace-key { display:flex; flex-wrap:wrap; gap:.3rem 1rem; font-size:.85rem; }
+.trace-key span:first-child { color:#086e67; }
+.trace-key span:last-child { color:#80540a; }
+.quantum-study input { display:block; width:min(100%,38rem); accent-color:var(--teal); }
+.quantum-study details { margin:1rem 0; }
+@media(max-width:640px) {
+  .prediction-pair { grid-template-columns:1fr; gap:.55rem; }
+  .prediction-pair svg { max-height:180px; }
+}
