@@ -8,12 +8,12 @@ def main():
     source=ROOT/'website/dist';dest=ROOT/'outputs/pages';dest.mkdir(parents=True,exist_ok=True)
     # Version the bytes actually copied, including the active source configuration.
     index=(source/'index.html').read_text(encoding='utf-8')
-    for name in ['config.js','app.js','physics.js','style.css']:
+    for name in ['config.js','app.js','physics.js','style.css','studies.js','studies.css']:
         digest=hashlib.sha256((source/name).read_bytes()).hexdigest()[:12]
         index=re.sub(r'(?<=["\'])'+re.escape(name)+r'(?:\?[^"\s]*)?(?=["\'])',name+'?v='+digest,index)
-    (source/'index.html').write_text(index,encoding='utf-8',newline='\n')
+    (dest/'index.html').write_text(index,encoding='utf-8',newline='\n')
     for item in source.iterdir():
-        if item.name=='lab' or item.suffix in ['.mp4','.wav']:continue
+        if item.name in {'lab','index.html'} or item.suffix in ['.mp4','.wav']:continue
         if item.is_dir():shutil.copytree(item,dest/item.name,dirs_exist_ok=True)
         else:shutil.copy2(item,dest/item.name)
     if cfg['youtube_url']:

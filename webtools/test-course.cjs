@@ -10,6 +10,7 @@ async function main(){
  try{
   for(let i=0;i<50;i++){try{if((await fetch(base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,200));}
   browser=await chromium.launch({headless:true});page=await browser.newPage();page.on('pageerror',e=>errors.push(e.message));
+  report.studies=await require('./test-studies.cjs').checkStudies(browser,base);
   for(const [name,width,height] of [['desktop',1440,960],['tablet',820,1180],['phone',390,844]]){
    await page.setViewportSize({width,height});await page.goto(base,{waitUntil:'domcontentloaded'});await page.locator('#chapters button').nth(events.chapters.length-1).waitFor();
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),name+' overflow');assert.equal(await page.locator('#chapters button').count(),events.chapters.length);
